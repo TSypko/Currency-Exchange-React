@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: url(../images/background.jpg);
+  background: url(../src/background.jpg);
   background-size: cover;
   font-family: "Roboto Condensed", sans-serif;
   color: #222;
