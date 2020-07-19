@@ -45,6 +45,12 @@ const Form = ({ title, currencies }) => {
                             <option className="form__item">US Dollar</option>
                             <option className="form__item">British Pound</option>
                             <option className="form__item">Swiss Franc</option>
+                            <option className="form__item">Danish krone</option>
+                            <option className="form__item">Norwegian krone</option>
+                            <option className="form__item">Swedish krona</option>
+                            <option className="form__item">Russian rouble</option>
+                            <option className="form__item">Ukrainian hryvnia</option>
+                            <option className="form__item">Czech koruna</option>
                         </select>
                     </div>
                     <div className="form__currencyInFlag">{currencyFrom.flagImage}</div>
@@ -62,6 +68,12 @@ const Form = ({ title, currencies }) => {
                             <option className="form__item">US Dollar</option>
                             <option className="form__item">British Pound</option>
                             <option className="form__item">Swiss Franc</option>
+                            <option className="form__item">Danish krone</option>
+                            <option className="form__item">Norwegian krone</option>
+                            <option className="form__item">Swedish krona</option>
+                            <option className="form__item">Russian rouble</option>
+                            <option className="form__item">Ukrainian hryvnia</option>
+                            <option className="form__item">Czech koruna</option>
                         </select>
                     </div>
                     <div className="form__currencyOutFlag">{currencyTo.flagImage}</div>
