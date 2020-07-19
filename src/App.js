@@ -7,7 +7,7 @@ function App() {
   return (
     <Container>
       <Header title="simple currency exchange" />
-      <Form />
+      <Form title="conventer" />
     </Container>
   );
 }
