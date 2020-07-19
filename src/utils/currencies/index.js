@@ -1,5 +1,7 @@
 import * as flag from '../flags';
 
+export const rateDate = "2020-07-19";
+
 export const currencies = [
     {
       name: "Polish Zloty",

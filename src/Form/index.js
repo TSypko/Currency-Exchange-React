@@ -5,6 +5,7 @@ import ResultField from "../ResultField"
 import "./style.css";
 import Amount from '../Amount';
 
+
 const Form = ({ currencies, result, calculateResult }) => {
 
     const [currencyFromName, setCurrencyFrom] = useState("Polish Zloty");
