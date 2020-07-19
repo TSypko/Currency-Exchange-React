@@ -33,7 +33,7 @@ const Form = ({ currencies, result, calculateResult }) => {
                 <legend className="form__legend">
                     Conventer
                 </legend>
-                <div className="form__fieldWrapper">
+                <div className="form__inputWrapper">
                     <FormField body={
                         <CurrencySelector
                             labelText={"From:"}
