@@ -18,7 +18,7 @@ const Form = ({ title, currencies }) => {
     let result;
     if (amount === "") { result = "" }
     else result = `
-        ${(amount * currencyFrom.rate * (1 / currencyTo.rate)).toFixed(2)} ${currencyTo.shortname}
+        ${(amount * currencyFrom.rate / currencyTo.rate).toFixed(2)} ${currencyTo.shortname}
         `;
 
     return (
