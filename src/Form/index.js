@@ -5,7 +5,7 @@ import ResultField from "../ResultField"
 import "./style.css";
 import Amount from '../Amount';
 
-const Form = ({ title, currencies, result, calculateResult }) => {
+const Form = ({ currencies, result, calculateResult }) => {
 
     const [currencyFromName, setCurrencyFrom] = useState("Polish Zloty");
     const onSelectCurrencyFromChange = ({ target }) => setCurrencyFrom(target.value);
@@ -31,7 +31,7 @@ const Form = ({ title, currencies, result, calculateResult }) => {
             className="form">
             <fieldset className="form__fieldset">
                 <legend className="form__legend">
-                    {title}
+                    Conventer
                 </legend>
                 <div className="form__fieldWrapper">
                     <FormField body={

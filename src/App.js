@@ -15,7 +15,6 @@ function App() {
     <Container>
       <Header title="simple currency exchange" />
       <Form
-        title="conventer"
         currencies={currencies}
         result={result}
         calculateResult={calculateResult}
