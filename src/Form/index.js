@@ -75,7 +75,7 @@ const Form = ({ title, currencies }) => {
                     </div>
                 </div>
                 <div className="form__field form__field--result">
-                    <p className="form__result">Result: <span className="form__result--value">{result}</span></p>
+                    <p className="form__result">Result: <span className="form__result--value">{result} {currencyTo.shortname}</span></p>
                     <p className="form__note"><strong>IMPORTANT!</strong> exchange rates according to National Bank of
                         Poland from 2020-06-24</p>
                 </div>
