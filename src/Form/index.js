@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CurrencySelector from "../CurrencySelector"
 import FormField from "../FormField"
+import ResultField from "../ResultField"
 import "./style.css";
 
 const Form = ({ title, currencies }) => {
@@ -65,16 +66,10 @@ const Form = ({ title, currencies }) => {
                     }
                     />
                 </div>
-                <FormField formFieldType={"formField--result"} body={
-                    <>
-                        <p className="form__result">Result: <span className="form__result--value">{result}</span></p>
-                        <p className="form__note"><strong>IMPORTANT!</strong> exchange rates according to National Bank of
-                        Poland from 2020-07-19</p>
-                    </>
-                }
-
+                <FormField
+                    formFieldType={"formField--result"}
+                    body={<ResultField result={result} />}
                 />
-
             </fieldset>
         </form>
     )
