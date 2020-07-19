@@ -20,8 +20,12 @@ const Form = ({ title, currencies }) => {
             ? `${(amount * currencyFrom.rate / currencyTo.rate).toFixed(2)} ${currencyTo.shortname}`
             : "";
 
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+    }
+
     return (
-        <form className="form">
+        <form onSubmit={onFormSubmit} className="form">
             <fieldset className="form__fieldset">
                 <legend className="form__legend">
                     {title}
