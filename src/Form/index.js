@@ -17,7 +17,12 @@ const Form = ({ title, currencies }) => {
     const currencyFrom = currencies[currencies.findIndex(({ name }) => name === currencyFromName)];
     const currencyTo = currencies[currencies.findIndex(({ name }) => name === currencyToName)];
 
-    const result = (amount * currencyFrom.rate * (1 / currencyTo.rate)).toFixed(2);
+    let result;
+    if (amount === "") { result = "" }
+    else result = `
+        ${(amount * currencyFrom.rate * (1 / currencyTo.rate)).toFixed(2)} ${currencyTo.shortname}
+        `;
+
 
     return (
         <form className="form">
@@ -75,11 +80,10 @@ const Form = ({ title, currencies }) => {
                     </div>
                 </div>
                 <div className="form__field form__field--result">
-                    <p className="form__result">Result: <span className="form__result--value">{result} {currencyTo.shortname}</span></p>
+                    <p className="form__result">Result: <span className="form__result--value">{result}</span></p>
                     <p className="form__note"><strong>IMPORTANT!</strong> exchange rates according to National Bank of
                         Poland from 2020-06-24</p>
                 </div>
-
             </fieldset>
         </form>
     )
