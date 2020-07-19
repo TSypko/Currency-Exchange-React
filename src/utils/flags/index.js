@@ -1,5 +1,5 @@
 import React from 'react';
-import plnFlagImage from '../flags/Flag_of_Poland_2.svg'
+import plnFlagImage from '../flags/Flag_of_Poland.svg'
 import euroFlagImage from '../flags/Flag_of_euro.svg'
 import usdFlagImage from '../flags/US_44_Star_Flag.svg'
 import gbpFlagImage from '../flags/Flag_of_the_United_Kingdom.svg'
