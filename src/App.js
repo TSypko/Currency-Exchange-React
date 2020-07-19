@@ -8,7 +8,7 @@ function App() {
 
   const [result, setResult] = useState("");
   const calculateResult = (amount, currencyFrom, currencyTo, currencyToName) => {
-    setResult(`${(amount * currencyFrom / currencyTo).toFixed(2)}  ${currencyToName}`);
+    setResult(`${(amount * currencyFrom / currencyTo).toFixed(2)} ${currencyToName}`);
   }
 
   return (
