@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CurrencySelector from "../CurrencySelector"
+import FormField from "../FormField"
 import "./style.css";
 
 const Form = ({ title, currencies }) => {
@@ -32,41 +33,48 @@ const Form = ({ title, currencies }) => {
                     {title}
                 </legend>
                 <div className="form__fieldWrapper">
-                    <div className="form__field">
+                    <FormField body={
                         <CurrencySelector
                             labelText={"From:"}
                             value={currencyFromName}
                             onChange={onSelectCurrencyFromChange}
-                        />
-                    </div>
+                        />}
+                    />
                     <div className="form__currencyInFlag">{currencyFrom.flagImage}</div>
-                    <div className="form__field">
+                    <FormField body={
                         <CurrencySelector
                             labelText={"To:"}
                             value={currencyToName}
                             onChange={onSelectCurrencyToChange}
-                        />
-                    </div>
+                        />}
+                    />
                     <div className="form__currencyOutFlag">{currencyTo.flagImage}</div>
-                    <div className="form__field ">
-                        <label htmlFor="amount" className="form__label"
-                        >Amount:</label>
+                    <FormField body={
+                        <label className="formField__label"
+                        >Amount:
                         <input
-                            id="amount"
-                            type="number"
-                            step="0.01"
-                            className="form__input form__input--amount"
-                            name="amountIn"
-                            value={amount}
-                            onChange={onSetAmountChange}
-                        />
-                    </div>
+                                id="amount"
+                                type="number"
+                                step="0.01"
+                                className="formField__input formField__input--amount"
+                                name="amountIn"
+                                value={amount}
+                                onChange={onSetAmountChange}
+                            />
+                        </label>
+                    }
+                    />
                 </div>
-                <div className="form__field form__field--result">
-                    <p className="form__result">Result: <span className="form__result--value">{result}</span></p>
-                    <p className="form__note"><strong>IMPORTANT!</strong> exchange rates according to National Bank of
+                <FormField formFieldType={"formField--result"} body={
+                    <>
+                        <p className="form__result">Result: <span className="form__result--value">{result}</span></p>
+                        <p className="form__note"><strong>IMPORTANT!</strong> exchange rates according to National Bank of
                         Poland from 2020-07-19</p>
-                </div>
+                    </>
+                }
+
+                />
+
             </fieldset>
         </form>
     )
