@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import "./style.css";
 
-
-
 const Form = ({ title, currencies }) => {
 
     const [currencyFromName, setCurrencyFrom] = useState("Polish Zloty");
@@ -22,7 +20,6 @@ const Form = ({ title, currencies }) => {
     else result = `
         ${(amount * currencyFrom.rate * (1 / currencyTo.rate)).toFixed(2)} ${currencyTo.shortname}
         `;
-
 
     return (
         <form className="form">
