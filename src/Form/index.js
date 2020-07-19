@@ -5,7 +5,7 @@ import ResultField from "../ResultField"
 import "./style.css";
 import Amount from '../Amount';
 
-const Form = ({ title, currencies }) => {
+const Form = ({ title, currencies, result, calculateResult }) => {
 
     const [currencyFromName, setCurrencyFrom] = useState("Polish Zloty");
     const onSelectCurrencyFromChange = ({ target }) => setCurrencyFrom(target.value);
@@ -16,20 +16,19 @@ const Form = ({ title, currencies }) => {
     const [amount, setAmount] = useState("");
     const onSetAmountChange = ({ target }) => setAmount(+target.value);
 
+
     const currencyFrom = currencies[currencies.findIndex(({ name }) => name === currencyFromName)];
     const currencyTo = currencies[currencies.findIndex(({ name }) => name === currencyToName)];
-
-    const result =
-        amount
-            ? `${(amount * currencyFrom.rate / currencyTo.rate).toFixed(2)} ${currencyTo.shortname}`
-            : "";
 
     const onFormSubmit = (event) => {
         event.preventDefault();
     }
 
     return (
-        <form onSubmit={onFormSubmit} className="form">
+        <form
+            onSubmit={onFormSubmit}
+            onChange={calculateResult(amount, currencyFrom.rate, currencyTo.rate, currencyTo.shortname)}
+            className="form">
             <fieldset className="form__fieldset">
                 <legend className="form__legend">
                     {title}
