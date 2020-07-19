@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Currency-Exchange-React/static/css/main.8f32ef6a.chunk.css",
-    "main.js": "/Currency-Exchange-React/static/js/main.92554f81.chunk.js",
-    "main.js.map": "/Currency-Exchange-React/static/js/main.92554f81.chunk.js.map",
+    "main.css": "/Currency-Exchange-React/static/css/main.9c5f2292.chunk.css",
+    "main.js": "/Currency-Exchange-React/static/js/main.c4c8d28a.chunk.js",
+    "main.js.map": "/Currency-Exchange-React/static/js/main.c4c8d28a.chunk.js.map",
     "runtime-main.js": "/Currency-Exchange-React/static/js/runtime-main.8e14dfba.js",
     "runtime-main.js.map": "/Currency-Exchange-React/static/js/runtime-main.8e14dfba.js.map",
     "static/js/2.59ba8094.chunk.js": "/Currency-Exchange-React/static/js/2.59ba8094.chunk.js",
     "static/js/2.59ba8094.chunk.js.map": "/Currency-Exchange-React/static/js/2.59ba8094.chunk.js.map",
     "index.html": "/Currency-Exchange-React/index.html",
-    "precache-manifest.672952ff6264ae13c4b271665a37076b.js": "/Currency-Exchange-React/precache-manifest.672952ff6264ae13c4b271665a37076b.js",
+    "precache-manifest.e9f004a6db65dec3b25dcb2c263cc51d.js": "/Currency-Exchange-React/precache-manifest.e9f004a6db65dec3b25dcb2c263cc51d.js",
     "service-worker.js": "/Currency-Exchange-React/service-worker.js",
-    "static/css/main.8f32ef6a.chunk.css.map": "/Currency-Exchange-React/static/css/main.8f32ef6a.chunk.css.map",
+    "static/css/main.9c5f2292.chunk.css.map": "/Currency-Exchange-React/static/css/main.9c5f2292.chunk.css.map",
     "static/js/2.59ba8094.chunk.js.LICENSE.txt": "/Currency-Exchange-React/static/js/2.59ba8094.chunk.js.LICENSE.txt",
     "static/media/Flag_of_Denmark.svg": "/Currency-Exchange-React/static/media/Flag_of_Denmark.07be1277.svg",
     "static/media/Flag_of_Norway.svg": "/Currency-Exchange-React/static/media/Flag_of_Norway.4b57a28e.svg",
-    "static/media/Flag_of_Poland_2.svg": "/Currency-Exchange-React/static/media/Flag_of_Poland_2.5e767743.svg",
+    "static/media/Flag_of_Poland.svg": "/Currency-Exchange-React/static/media/Flag_of_Poland.1f9d98ad.svg",
     "static/media/Flag_of_Russia.svg": "/Currency-Exchange-React/static/media/Flag_of_Russia.7a8b3a7d.svg",
     "static/media/Flag_of_Sweden.svg": "/Currency-Exchange-React/static/media/Flag_of_Sweden.c37f1b98.svg",
     "static/media/Flag_of_Switzerland.svg": "/Currency-Exchange-React/static/media/Flag_of_Switzerland.69547e25.svg",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.8e14dfba.js",
     "static/js/2.59ba8094.chunk.js",
-    "static/css/main.8f32ef6a.chunk.css",
-    "static/js/main.92554f81.chunk.js"
+    "static/css/main.9c5f2292.chunk.css",
+    "static/js/main.c4c8d28a.chunk.js"
   ]
 }

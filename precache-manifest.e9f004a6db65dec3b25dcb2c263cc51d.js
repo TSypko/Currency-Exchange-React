@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8c565d49571ccd3fa4ad74473562439",
+    "revision": "4e30276031b6fb60b988213ce7d34451",
     "url": "/Currency-Exchange-React/index.html"
   },
   {
-    "revision": "bb8572e99196b4c04804",
-    "url": "/Currency-Exchange-React/static/css/main.8f32ef6a.chunk.css"
+    "revision": "37a0cd734f8f6191dd38",
+    "url": "/Currency-Exchange-React/static/css/main.9c5f2292.chunk.css"
   },
   {
     "revision": "8105ec12120d1e8c4a58",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/js/2.59ba8094.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bb8572e99196b4c04804",
-    "url": "/Currency-Exchange-React/static/js/main.92554f81.chunk.js"
+    "revision": "37a0cd734f8f6191dd38",
+    "url": "/Currency-Exchange-React/static/js/main.c4c8d28a.chunk.js"
   },
   {
     "revision": "710e263279d1990923ee",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/media/Flag_of_Norway.4b57a28e.svg"
   },
   {
-    "revision": "5e76774336ff321342747bf509c15a5e",
-    "url": "/Currency-Exchange-React/static/media/Flag_of_Poland_2.5e767743.svg"
+    "revision": "1f9d98add86d562439d174ab2308e5f2",
+    "url": "/Currency-Exchange-React/static/media/Flag_of_Poland.1f9d98ad.svg"
   },
   {
     "revision": "7a8b3a7d8204983d246e6edbcbe21413",
