@@ -2,7 +2,7 @@ import React from 'react';
 import Container from './Container';
 import Header from './Header';
 import Form from './Form';
-import * as flag from './Flags';
+import * as flag from './flags';
 
 
 function App() {
