@@ -1,39 +1,63 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cec800b1aa61691f4c05d240a556f950",
+    "revision": "4ebcc96f173c035131c22aaf9473bfdf",
     "url": "/Currency-Exchange-React/index.html"
   },
   {
-    "revision": "d45f42e74daf6dda0920",
+    "revision": "545793321ee614b6ab6a",
     "url": "/Currency-Exchange-React/static/css/main.84d6bc1e.chunk.css"
   },
   {
-    "revision": "5bdc26f3a6b3bdcd4ea5",
-    "url": "/Currency-Exchange-React/static/js/2.0838bf16.chunk.js"
+    "revision": "8105ec12120d1e8c4a58",
+    "url": "/Currency-Exchange-React/static/js/2.59ba8094.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Currency-Exchange-React/static/js/2.0838bf16.chunk.js.LICENSE.txt"
+    "url": "/Currency-Exchange-React/static/js/2.59ba8094.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d45f42e74daf6dda0920",
-    "url": "/Currency-Exchange-React/static/js/main.d162276a.chunk.js"
+    "revision": "545793321ee614b6ab6a",
+    "url": "/Currency-Exchange-React/static/js/main.d7e7cfe4.chunk.js"
   },
   {
     "revision": "710e263279d1990923ee",
     "url": "/Currency-Exchange-React/static/js/runtime-main.8e14dfba.js"
   },
   {
+    "revision": "07be12773c9bacc7883f41cf806ad7e5",
+    "url": "/Currency-Exchange-React/static/media/Flag_of_Denmark.07be1277.svg"
+  },
+  {
+    "revision": "4b57a28e497b81a0fb3063015dfbe800",
+    "url": "/Currency-Exchange-React/static/media/Flag_of_Norway.4b57a28e.svg"
+  },
+  {
     "revision": "5e76774336ff321342747bf509c15a5e",
     "url": "/Currency-Exchange-React/static/media/Flag_of_Poland_2.5e767743.svg"
+  },
+  {
+    "revision": "7a8b3a7d8204983d246e6edbcbe21413",
+    "url": "/Currency-Exchange-React/static/media/Flag_of_Russia.7a8b3a7d.svg"
+  },
+  {
+    "revision": "c37f1b987f795252cdb79a9c89e15159",
+    "url": "/Currency-Exchange-React/static/media/Flag_of_Sweden.c37f1b98.svg"
   },
   {
     "revision": "69547e25f5fe58a8b78777dc82725e04",
     "url": "/Currency-Exchange-React/static/media/Flag_of_Switzerland.69547e25.svg"
   },
   {
+    "revision": "1aeecd60c245f84d7db8bd634f0e870b",
+    "url": "/Currency-Exchange-React/static/media/Flag_of_Ukraine.1aeecd60.svg"
+  },
+  {
     "revision": "56bbc4f2da4807e47a7dec98ee381df8",
     "url": "/Currency-Exchange-React/static/media/Flag_of_euro.56bbc4f2.svg"
+  },
+  {
+    "revision": "9c5898c620005bd48fed5f3ea9210894",
+    "url": "/Currency-Exchange-React/static/media/Flag_of_the_Czech_Republic.9c5898c6.svg"
   },
   {
     "revision": "68b4d8305c4f90577e6357bb0c247d29",
