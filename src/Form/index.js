@@ -15,11 +15,10 @@ const Form = ({ title, currencies }) => {
     const currencyFrom = currencies[currencies.findIndex(({ name }) => name === currencyFromName)];
     const currencyTo = currencies[currencies.findIndex(({ name }) => name === currencyToName)];
 
-    let result;
-    if (amount === "") { result = "" }
-    else result = `
-        ${(amount * currencyFrom.rate / currencyTo.rate).toFixed(2)} ${currencyTo.shortname}
-        `;
+    const result =
+        amount
+            ? `${(amount * currencyFrom.rate / currencyTo.rate).toFixed(2)} ${currencyTo.shortname}`
+            : "";
 
     return (
         <form className="form">
