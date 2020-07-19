@@ -3,6 +3,7 @@ import CurrencySelector from "../CurrencySelector"
 import FormField from "../FormField"
 import ResultField from "../ResultField"
 import "./style.css";
+import Amount from '../Amount';
 
 const Form = ({ title, currencies }) => {
 
@@ -51,18 +52,9 @@ const Form = ({ title, currencies }) => {
                     />
                     <div className="form__currencyOutFlag">{currencyTo.flagImage}</div>
                     <FormField body={
-                        <label className="formField__label"
-                        >Amount:
-                        <input
-                                id="amount"
-                                type="number"
-                                step="0.01"
-                                className="formField__input formField__input--amount"
-                                name="amountIn"
-                                value={amount}
-                                onChange={onSetAmountChange}
-                            />
-                        </label>
+                        <Amount
+                            value={amount}
+                            onChange={onSetAmountChange} />
                     }
                     />
                 </div>
