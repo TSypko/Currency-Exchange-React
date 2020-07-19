@@ -47,7 +47,7 @@ const Form = ({ title, currencies }) => {
                             <option className="form__item">Swiss Franc</option>
                         </select>
                     </div>
-                    <div className="form__currencyInFlag"></div>
+                    <div className="form__currencyInFlag">{currencyFrom.flagImage}</div>
                     <div className="form__field">
                         <label htmlFor="outputCurrencyType" className="form__label">To:</label>
                         <select
@@ -64,7 +64,7 @@ const Form = ({ title, currencies }) => {
                             <option className="form__item">Swiss Franc</option>
                         </select>
                     </div>
-                    <div className="form__currencyOutFlag"></div>
+                    <div className="form__currencyOutFlag">{currencyTo.flagImage}</div>
                     <div className="form__field ">
                         <label htmlFor="amount" className="form__label"
                         >Amount:</label>
