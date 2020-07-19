@@ -1,7 +1,8 @@
 
-![SCE-logo](https://github.com/TSypko/SCE-Simple-Currency-Exchange-App/blob/master/images/share-mini.png?raw=true)
+![SCE-logo](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/src/share-mini.png)
 # `SIMPLE CURRENCY EXCHANGE`
-LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/)
+LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://tsypko.github.io/Currency-Exchange-React/)
+
  v. 0.3 beta
 ## `DESCRIPTION`
 Simple, lightweight currency conventer created during ,*,Become A Front End Developer"* course provided by *Youcode Academy*.
