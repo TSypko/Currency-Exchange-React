@@ -56,10 +56,6 @@
     border-radius: 5px;
 }
 
-.form__item {
-    font-size: 25px;
-}
-
 .form__input--amount {
     max-width: 150px;
 }
