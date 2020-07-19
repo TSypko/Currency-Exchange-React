@@ -1,6 +1,6 @@
 {
   "name": "currency-exchange-react",
-  "version": "0.3.0",
+  "version": "0.3.5",
   "private": true,
   "homepage": "https://tsypko.github.io/Currency-Exchange-React/",
   "dependencies": {
