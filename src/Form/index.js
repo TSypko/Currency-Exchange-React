@@ -8,15 +8,14 @@ import "./style.css";
 
 const Form = ({ result, calculateResult }) => {
 
-    const [currencyFromName, setCurrencyFrom] = useState("Polish Zloty");
-    const onSelectCurrencyFromChange = ({ target }) => setCurrencyFrom(target.value);
+    const [currencyFromName, setCurrencyFromNae] = useState("Polish Zloty");
+    const onSelectCurrencyFromChange = ({ target }) => setCurrencyFromNae(target.value);
 
-    const [currencyToName, setCurrencyTo] = useState("Euro");
-    const onSelectCurrencyToChange = ({ target }) => setCurrencyTo(target.value);
+    const [currencyToName, setCurrencyToName] = useState("Euro");
+    const onSelectCurrencyToChange = ({ target }) => setCurrencyToName(target.value);
 
-    const [amount, setAmount] = useState("");
-    const onSetAmountChange = ({ target }) => setAmount(+target.value);
-
+    const [amount, setAmount] = useState();
+    const onAmountChange = ({ target }) => setAmount(+target.value);
 
     const currencyFrom = currencies[currencies.findIndex(({ name }) => name === currencyFromName)];
     const currencyTo = currencies[currencies.findIndex(({ name }) => name === currencyToName)];
@@ -54,7 +53,7 @@ const Form = ({ result, calculateResult }) => {
                     <FormField body={
                         <Amount
                             value={amount}
-                            onChange={onSetAmountChange} 
+                            onChange={onAmountChange} 
                             />
                     }
                     />
