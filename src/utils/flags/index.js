@@ -9,6 +9,8 @@ import sweFlagImage from '../flags/Swedish krona.svg'
 import rusFlagImage from '../flags/Russian rouble.svg'
 import ukrFlagImage from '../flags/Ukrainian hryvnia.svg'
 import czkFlagImage from '../flags/Czech koruna.svg'
+import jpyFlagImage from '../flags/Japanese Yen.svg'
+import hrkFlagImage from '../flags/Croatian Kuna.svg'
 
 export {
     plnFlagImage,
@@ -21,5 +23,7 @@ export {
     sweFlagImage,
     rusFlagImage,
     ukrFlagImage,
-    czkFlagImage
+    czkFlagImage,
+    jpyFlagImage,
+    hrkFlagImage
 }

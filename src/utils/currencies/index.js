@@ -79,5 +79,19 @@ export const currencies = [
     rate: 0.1678,
     flagImage: flag.czkFlagImage,
     country: "Czechia",
-  }
+  },
+  {
+    name: "Japanese Yen",
+    shortname: "JPY",
+    rate: 3.6002 / 100,
+    flagImage: flag.jpyFlagImage,
+    country: "Japan",
+  },
+  {
+    name: "Croatian Kuna",
+    shortname: "HRK",
+    rate: 0.5904,
+    flagImage: flag.hrkFlagImage,
+    country: "Croatia",
+  },
 ];
