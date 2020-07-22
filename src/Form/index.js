@@ -28,7 +28,7 @@ const Form = ({ currencies, result, calculateResult }) => {
     return (
         <form
             onSubmit={onFormSubmit}
-            onChange={calculateResult(amount, currencyFrom.rate, currencyTo.rate, currencyTo.shortname)}
+            onChange={calculateResult(amount, currencyFrom.rate, currencyTo.rate)}
             className="form">
             <fieldset className="form__fieldset">
                 <legend className="form__legend">
@@ -54,13 +54,20 @@ const Form = ({ currencies, result, calculateResult }) => {
                     <FormField body={
                         <Amount
                             value={amount}
-                            onChange={onSetAmountChange} />
+                            onChange={onSetAmountChange} 
+                            />
                     }
                     />
                 </div>
                 <FormField
                     formFieldType={"formField--result"}
-                    body={<ResultField result={result} />}
+                    body={
+                    <ResultField
+                     result={result}
+                     currencyToName={currencyTo.shortname} 
+                     amount={amount} 
+                     />
+                }
                 />
             </fieldset>
         </form>
