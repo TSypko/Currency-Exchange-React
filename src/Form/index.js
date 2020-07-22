@@ -17,8 +17,8 @@ const Form = ({ result, calculateResult }) => {
     const [amount, setAmount] = useState();
     const onAmountChange = ({ target }) => setAmount(+target.value);
 
-    const currencyFrom = currencies[currencies.findIndex(({ name }) => name === currencyFromName)];
-    const currencyTo = currencies[currencies.findIndex(({ name }) => name === currencyToName)];
+    const currencyFrom = currencies.find(({ name }) => name === currencyFromName);
+    const currencyTo = currencies.find(({ name }) => name === currencyToName);
 
     const onFormSubmit = (event) => {
         event.preventDefault();
