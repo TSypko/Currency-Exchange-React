@@ -2,7 +2,7 @@ import React from 'react';
 import "./style.css";
 
 const Amount = ({ value, onChange }) => (
-    <label className="amount__label"
+    <label className="amount"
     >Amount:
         <input
             type="number"
