@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import CurrencySelector from "../CurrencySelector"
 import FormField from "../FormField"
 import ResultField from "../ResultField"
-import "./style.css";
+import { currencies } from '../utils/currencies';
 import Amount from '../Amount';
+import "./style.css";
 
-
-const Form = ({ currencies, result, calculateResult }) => {
+const Form = ({ result, calculateResult }) => {
 
     const [currencyFromName, setCurrencyFrom] = useState("Polish Zloty");
     const onSelectCurrencyFromChange = ({ target }) => setCurrencyFrom(target.value);
