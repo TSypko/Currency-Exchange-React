@@ -1,5 +1,5 @@
 
-![SCE-logo](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/src/share-mini.png)
+![SCE-logo](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/public/share-mini.png)
 # SIMPLE CURRENCY EXCHANGE
 LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://tsypko.github.io/Currency-Exchange-React/)
 
@@ -46,7 +46,7 @@ Supported currencies:
 4. Result of conversion will appear instantly at **RESULT** field.
 5. Optional, you can switch currencies to check other conversions.
 
-![enter image description here](https://raw.githubusercontent.com/TSypko/SCE-Simple-Currency-Exchange-App/master/images/sce__usage.gif)
+![enter image description here](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/public/sce__usage.gif)
 
 ### AUTHOR
 [Tomasz Sypko](https://tsypko.github.io/homepage/). Pre Junior Front End Developer from Rzeszów, Poland. 
