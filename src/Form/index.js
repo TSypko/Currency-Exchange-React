@@ -6,15 +6,15 @@ import { currencies } from '../utils/currencies';
 import Amount from '../Amount';
 import "./style.css";
 
-const Form = ({ result, calculateResult }) => {
+const Form = () => {
 
-    const [currencyFromName, setCurrencyFromNae] = useState("Polish Zloty");
-    const onSelectCurrencyFromChange = ({ target }) => setCurrencyFromNae(target.value);
+    const [currencyFromName, setCurrencyFromName] = useState("Polish Zloty");
+    const onSelectCurrencyFromChange = ({ target }) => setCurrencyFromName(target.value);
 
     const [currencyToName, setCurrencyToName] = useState("Euro");
     const onSelectCurrencyToChange = ({ target }) => setCurrencyToName(target.value);
 
-    const [amount, setAmount] = useState();
+    const [amount, setAmount] = useState("");
     const onAmountChange = ({ target }) => setAmount(+target.value);
 
     const currencyFrom = currencies.find(({ name }) => name === currencyFromName);
@@ -22,12 +22,13 @@ const Form = ({ result, calculateResult }) => {
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-    }
+    };
+
+    const result = (amount * currencyFrom.rate / currencyTo.rate).toFixed(2);
 
     return (
         <form
             onSubmit={onFormSubmit}
-            onChange={calculateResult(amount, currencyFrom.rate, currencyTo.rate)}
             className="form">
             <fieldset className="form__fieldset">
                 <legend className="form__legend">
@@ -44,7 +45,12 @@ const Form = ({ result, calculateResult }) => {
                             />
                         }
                     />
-                    <div className="form__currencyInFlag">{currencyFrom.flagImage}</div>
+                    <div className="form__currencyInFlag">
+                        <img
+                            src={currencyFrom.flagImage}
+                            alt={`Flag of ${currencyFrom.country}`}
+                            className="form__flag" />
+                    </div>
                     <FormField
                         body=
                         {
@@ -55,7 +61,12 @@ const Form = ({ result, calculateResult }) => {
                             />
                         }
                     />
-                    <div className="form__currencyOutFlag">{currencyTo.flagImage}</div>
+                    <div className="form__currencyOutFlag">
+                        <img
+                            src={currencyTo.flagImage}
+                            alt={`Flag of ${currencyTo.country}`}
+                            className="form__flag" />
+                    </div>
                     <FormField
                         body=
                         {
