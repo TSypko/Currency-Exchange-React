@@ -7,11 +7,9 @@ import { currencies } from './utils/currencies';
 function App() {
 
   const [result, setResult] = useState("");
-  const calculateResult = (amount, currencyFrom, currencyTo, currencyToName) => {
+  const calculateResult = (amount, currencyFrom, currencyTo) => {
     setResult(
-      amount
-        ? `${(amount * currencyFrom / currencyTo).toFixed(2)} ${currencyToName}`
-        : ""
+      (amount * currencyFrom / currencyTo).toFixed(2)
     );
   }
 
