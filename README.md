@@ -1,10 +1,10 @@
 
 ![SCE-logo](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/src/share-mini.png)
-# `SIMPLE CURRENCY EXCHANGE`
+# SIMPLE CURRENCY EXCHANGE
 LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://tsypko.github.io/Currency-Exchange-React/)
 
  v. 0.3.5 beta
-## `DESCRIPTION`
+## DESCRIPTION
 Simple, lightweight currency conventer created during ,*,Become A Front End Developer"* course provided by *Youcode Academy*.
 It allows you to instantly convert currencies based on the exchange rate of the day*.
 Supported currencies: 
@@ -24,7 +24,7 @@ Supported currencies:
  // more to come in future...
 * Important! Rates are currently static.
 
-### `TECHNOLOGIES USED:`
+### TECHNOLOGIES USED:
 
 - REACT.js
 - creat-react-app
@@ -33,12 +33,12 @@ Supported currencies:
 - JavaScript ES6+
 
 
-### `METHODOLOGIES USED:`
+### METHODOLOGIES USED:
 
 - BEM convention
 - JSX
 
-### `HOW TO USE`
+### HOW TO USE
 
 1. Choose a currency type you wish to convert from **FROM** field.
 2. Choose a currency type you wish to convert to from **TO** field.
@@ -48,13 +48,13 @@ Supported currencies:
 
 ![enter image description here](https://raw.githubusercontent.com/TSypko/SCE-Simple-Currency-Exchange-App/master/images/sce__usage.gif)
 
-### `AUTHOR`
+### AUTHOR
 [Tomasz Sypko](https://tsypko.github.io/homepage/). Pre Junior Front End Developer from Rzeszów, Poland. 
-### `CONTACT:`
+### CONTACT:
 Please feel free to contact with author: [tsypko@gmail.com](tsypko@gmail.com)
 
-### `VERSION HISTORY`
-v. 0.3.5 - Currencies added:
+### VERSION HISTORY
+v. 0.3.5 - current version - Currencies added:
  - [ ] DKK - Danish krone
  - [ ] NOK - Norwegian krone
  - [ ] SEK - Swedish krona
@@ -62,10 +62,9 @@ v. 0.3.5 - Currencies added:
  - [ ] UAH - Ukrainian hryvnia
  - [ ] CZK - Czech koruna
 
-
 v. 0.3.0 - Application exported to React.JS
 
-v. 0.2.0 - beta - current version.
+v. 0.2.0 - beta
 - JavaScript code thoroughly refactored,
 
 v. 0.1.1 - beta
@@ -77,7 +76,7 @@ v. 0.1 - beta
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## `Available Scripts`
+## Available Scripts
 
 In the project directory, you can run:
 
