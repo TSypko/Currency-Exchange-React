@@ -3,7 +3,8 @@
 # SIMPLE CURRENCY EXCHANGE
 LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://tsypko.github.io/Currency-Exchange-React/)
 
- v. 0.3.5 beta
+ v. 0.3.6 beta
+
 ## DESCRIPTION
 Simple, lightweight currency conventer created during ,*,Become A Front End Developer"* course provided by *Youcode Academy*.
 It allows you to instantly convert currencies based on the exchange rate of the day*.
@@ -54,13 +55,18 @@ Supported currencies:
 Please feel free to contact with author: [tsypko@gmail.com](tsypko@gmail.com)
 
 ### VERSION HISTORY
-v. 0.3.5 - current version - Currencies added:
- - [ ] DKK - Danish krone
- - [ ] NOK - Norwegian krone
- - [ ] SEK - Swedish krona
- - [ ] RUB - Russian rouble
- - [ ] UAH - Ukrainian hryvnia
- - [ ] CZK - Czech koruna
+
+v. 0.3.6 - current version - Currencies added:
+ - [+] JPY - Japanese Yen
+ - [+] HRK - Croatian Kuna
+
+v. 0.3.5 - Currencies added:
+ - [+] DKK - Danish krone
+ - [+] NOK - Norwegian krone
+ - [+] SEK - Swedish krona
+ - [+] RUB - Russian rouble
+ - [+] UAH - Ukrainian hryvnia
+ - [+] CZK - Czech koruna
 
 v. 0.3.0 - Application exported to React.JS
 
