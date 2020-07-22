@@ -34,39 +34,48 @@ const Form = ({ result, calculateResult }) => {
                     Conventer
                 </legend>
                 <div className="form__inputWrapper">
-                    <FormField body={
-                        <CurrencySelector
-                            labelText={"From:"}
-                            value={currencyFromName}
-                            onChange={onSelectCurrencyFromChange}
-                        />}
+                    <FormField
+                        body=
+                        {
+                            <CurrencySelector
+                                labelText="From:"
+                                value={currencyFromName}
+                                onChange={onSelectCurrencyFromChange}
+                            />
+                        }
                     />
                     <div className="form__currencyInFlag">{currencyFrom.flagImage}</div>
-                    <FormField body={
-                        <CurrencySelector
-                            labelText={"To:"}
-                            value={currencyToName}
-                            onChange={onSelectCurrencyToChange}
-                        />}
+                    <FormField
+                        body=
+                        {
+                            <CurrencySelector
+                                labelText="To:"
+                                value={currencyToName}
+                                onChange={onSelectCurrencyToChange}
+                            />
+                        }
                     />
                     <div className="form__currencyOutFlag">{currencyTo.flagImage}</div>
-                    <FormField body={
-                        <Amount
-                            value={amount}
-                            onChange={onAmountChange} 
+                    <FormField
+                        body=
+                        {
+                            <Amount
+                                value={amount}
+                                onChange={onAmountChange}
                             />
-                    }
+                        }
                     />
                 </div>
                 <FormField
-                    formFieldType={"formField--result"}
-                    body={
-                    <ResultField
-                     result={result}
-                     currencyToName={currencyTo.shortname} 
-                     amount={amount} 
-                     />
-                }
+                    formFieldType={"result"}
+                    body=
+                    {
+                        <ResultField
+                            result={result}
+                            currencyToName={currencyTo.shortname}
+                            amount={amount}
+                        />
+                    }
                 />
             </fieldset>
         </form>

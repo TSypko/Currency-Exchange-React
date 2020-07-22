@@ -3,7 +3,7 @@ import "./style.css";
 
 const FormField = ({ formFieldType, body }) => (
 
-    <div className={`formField${formFieldType ? ` ${formFieldType}` : ""}`}>
+    <div className={`formField${formFieldType ? ` formField--${formFieldType}` : ""}`}>
         {body}
     </div>
 );
