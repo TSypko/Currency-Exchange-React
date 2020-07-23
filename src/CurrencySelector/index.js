@@ -4,7 +4,7 @@ import "./style.css";
 
 const CurrencySelector = ({ labelText, value, onChange }) => {
 
-    const currencySelectorItem = currencies.sort((a, b) => (a.name).localeCompare(b.name));
+    const currencySelectorItems = currencies.sort((a, b) => (a.name).localeCompare(b.name));
 
     return (
 
@@ -15,7 +15,7 @@ const CurrencySelector = ({ labelText, value, onChange }) => {
                 value={value}
                 onChange={onChange}
             >
-                {currencySelectorItem.map(currency =>
+                {currencySelectorItems.map(currency =>
                     <option
                         className="currencySelector__item"
                         key={currency.shortname}>
