@@ -7,12 +7,9 @@ import dkkFlagImage from '../flags/Danish krone.svg'
 import norFlagImage from '../flags/Norwegian krone.svg'
 import sweFlagImage from '../flags/Swedish krona.svg'
 import rusFlagImage from '../flags/Russian rouble.svg'
-import ukrFlagImage from '../flags/Ukrainian hryvnia.svg'
 import czkFlagImage from '../flags/Czech koruna.svg'
 import jpyFlagImage from '../flags/Japanese Yen.svg'
 import hrkFlagImage from '../flags/Croatian Kuna.svg'
-
-export const rateDate = "2020-07-19";
 
 export const currencies = [
   {
@@ -79,13 +76,6 @@ export const currencies = [
     country: "Russia",
   },
   {
-    name: "Ukrainian hryvnia",
-    shortname: "UAH",
-    rate: 0.1435,
-    flagImage: ukrFlagImage,
-    country: "Ukraine",
-  },
-  {
     name: "Czech koruna",
     shortname: "CZK",
     rate: 0.1678,
@@ -105,5 +95,5 @@ export const currencies = [
     rate: 0.5904,
     flagImage: hrkFlagImage,
     country: "Croatia",
-  },
+  }
 ];

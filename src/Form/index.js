@@ -8,6 +8,22 @@ import "./style.css";
 
 const Form = () => {
 
+    const [importedCurrencies, setRates] = useState(currencies);
+    const getRates = async () => {
+        const response = await fetch('https://api.exchangeratesapi.io/latest?base=PLN')
+        const rateData = await response.json();
+        const rates = rateData.rates;
+        const ratesEntries = Object.entries(rates);
+        setRates(currencies.map(
+            (currency) => (
+                {
+                    ...currency,
+                    rate: ratesEntries.find(([rate]) => rate === (currency.shortname))[1]
+                }
+            )
+        )
+        );
+    };
     const [currencyFromName, setCurrencyFromName] = useState("Polish Zloty");
     const onSelectCurrencyFromChange = ({ target }) => setCurrencyFromName(target.value);
 
@@ -17,18 +33,19 @@ const Form = () => {
     const [amount, setAmount] = useState("");
     const onAmountChange = ({ target }) => setAmount(+target.value);
 
-    const currencyFrom = currencies.find(({ name }) => name === currencyFromName);
-    const currencyTo = currencies.find(({ name }) => name === currencyToName);
+    const currencyFrom = importedCurrencies.find(({ name }) => name === currencyFromName);
+    const currencyTo = importedCurrencies.find(({ name }) => name === currencyToName);
 
     const onFormSubmit = (event) => {
         event.preventDefault();
     };
 
-    const result = (amount * currencyFrom.rate / currencyTo.rate).toFixed(2);
+    const result = (amount * currencyTo.rate / currencyFrom.rate).toFixed(2);
 
     return (
         <form
             onSubmit={onFormSubmit}
+            onChange={getRates}
             className="form">
             <fieldset className="form__fieldset">
                 <legend className="form__legend">
