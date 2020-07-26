@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a3581fe8364d99b563fa4c1b50021419",
+    "revision": "98f979ce2e26a7804d6816884984d3d9",
     "url": "/Currency-Exchange-React/index.html"
   },
   {
-    "revision": "4ca900f6b877d9d9fee0",
-    "url": "/Currency-Exchange-React/static/css/main.816c9c64.chunk.css"
+    "revision": "852e7b5314db29cc4474",
+    "url": "/Currency-Exchange-React/static/css/main.081ab166.chunk.css"
   },
   {
-    "revision": "60eaa95d48ffe254fc97",
-    "url": "/Currency-Exchange-React/static/js/2.1a49ecfb.chunk.js"
+    "revision": "1bd9fb49a6003f9bf83d",
+    "url": "/Currency-Exchange-React/static/js/2.3e0000d5.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Currency-Exchange-React/static/js/2.1a49ecfb.chunk.js.LICENSE.txt"
+    "url": "/Currency-Exchange-React/static/js/2.3e0000d5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4ca900f6b877d9d9fee0",
-    "url": "/Currency-Exchange-React/static/js/main.d673911f.chunk.js"
+    "revision": "852e7b5314db29cc4474",
+    "url": "/Currency-Exchange-React/static/js/main.6105b8c5.chunk.js"
   },
   {
     "revision": "710e263279d1990923ee",
     "url": "/Currency-Exchange-React/static/js/runtime-main.8e14dfba.js"
   },
   {
-    "revision": "68b4d8305c4f90577e6357bb0c247d29",
-    "url": "/Currency-Exchange-React/static/media/British Pound.68b4d830.svg"
+    "revision": "0b2080d0810297edc748a58ba3c40f5f",
+    "url": "/Currency-Exchange-React/static/media/British Pound.0b2080d0.svg"
   },
   {
     "revision": "3e56776d23fdd54b4ed116481dd19d2b",
@@ -40,12 +40,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/media/Danish krone.07be1277.svg"
   },
   {
-    "revision": "56bbc4f2da4807e47a7dec98ee381df8",
-    "url": "/Currency-Exchange-React/static/media/Euro.56bbc4f2.svg"
+    "revision": "2a2f6022177eb79d95d9c3f644bf7c46",
+    "url": "/Currency-Exchange-React/static/media/Euro.2a2f6022.svg"
   },
   {
-    "revision": "a1e1ea513a3fcd801e85db4373ce8cd6",
-    "url": "/Currency-Exchange-React/static/media/Japanese Yen.a1e1ea51.svg"
+    "revision": "ac5b479cc4cea794271429e85c6fa3ad",
+    "url": "/Currency-Exchange-React/static/media/Japanese Yen.ac5b479c.svg"
   },
   {
     "revision": "4b57a28e497b81a0fb3063015dfbe800",
@@ -64,12 +64,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/media/Swedish krona.c37f1b98.svg"
   },
   {
-    "revision": "69547e25f5fe58a8b78777dc82725e04",
-    "url": "/Currency-Exchange-React/static/media/Swiss Franc.69547e25.svg"
+    "revision": "1607794f337b185cc2aa512dba65bef9",
+    "url": "/Currency-Exchange-React/static/media/Swiss Franc.1607794f.svg"
   },
   {
-    "revision": "1b6ffca9e2688080282da4be5c70e646",
-    "url": "/Currency-Exchange-React/static/media/US Dollar.1b6ffca9.svg"
+    "revision": "2995c32de71b731a140529af1fe986bf",
+    "url": "/Currency-Exchange-React/static/media/US Dollar.2995c32d.svg"
   },
   {
     "revision": "1aeecd60c245f84d7db8bd634f0e870b",
