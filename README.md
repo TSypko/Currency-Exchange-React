@@ -47,7 +47,7 @@ Supported currencies:
 4. Result of conversion will appear instantly at **RESULT** field.
 5. Optional, you can switch currencies to check other conversions.
 
-![enter image description here](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/public/sce__usage.gif)
+![enter image description here](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/sce__usage.gif)
 
 ### AUTHOR
 [Tomasz Sypko](https://tsypko.github.io/homepage/). Pre Junior Front End Developer from Rzeszów, Poland. 
