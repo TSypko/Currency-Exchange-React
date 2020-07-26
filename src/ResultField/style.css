@@ -19,4 +19,25 @@
     font-size: 14px;
     font-weight: 400;
     font-style: italic;
+    text-align: right;
+}
+.resultField__link {
+    text-decoration: none;
+    color: #005383;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+}
+.resultField__link:hover {
+    color: #005383bd;
+}
+.resultField__link:active {
+    color: #005383;
+}
+.resultField__date {
+    font-size: 15px;
+    float: right;
+    font-style: normal;
+    font-weight: 700;
+    margin: 10px;
 }
