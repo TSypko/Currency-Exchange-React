@@ -1,9 +1,9 @@
 
-![SCE-logo](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/public/share-mini.png)
+![SCE-logo](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/share-mini.png)
 # SIMPLE CURRENCY EXCHANGE
 LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://tsypko.github.io/Currency-Exchange-React/)
 
- v. 0.4.0 beta
+ v. 0.5.0 beta
 
 ## DESCRIPTION
 Simple, lightweight currency conventer created during ,*,Become A Front End Developer"* course provided by *Youcode Academy*.
@@ -19,11 +19,10 @@ Supported currencies:
  - [ ] NOK - Norwegian krone
  - [ ] SEK - Swedish krona
  - [ ] RUB - Russian rouble
- - [ ] UAH - Ukrainian hryvnia
  - [ ] CZK - Czech koruna
 
  // more to come in future...
-* Important! Rates are currently static.
+
 
 ### TECHNOLOGIES USED:
 
@@ -33,11 +32,21 @@ Supported currencies:
 - CSS
 - JavaScript ES6+
 
-
 ### METHODOLOGIES USED:
 
 - BEM convention
 - JSX
+- Fetch API
+
+### API:
+
+[https://exchangeratesapi.io/](https://exchangeratesapi.io)
+
+Foreign exchange rates API
+with currency conversion
+Exchange rates API is a free service for current and historical foreign exchange rates
+published by the [European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html/)
+
 
 ### HOW TO USE
 
@@ -56,7 +65,11 @@ Please feel free to contact with author: [tsypko@gmail.com](tsypko@gmail.com)
 
 ### VERSION HISTORY
 
-v. 0.4.0 - current version :
+v. 0.5.0 - current version :
+- added API integration
+- [-] UAH - Ukrainian hryvnia currency removed due to the lack of API support
+
+v. 0.4.0  :
 - added Date and Time display
 
 v. 0.3.6
