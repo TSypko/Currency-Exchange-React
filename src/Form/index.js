@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CurrencySelector from "../CurrencySelector"
 import FormField from "../FormField"
 import ResultField from "../ResultField"
@@ -9,21 +9,26 @@ import "./style.css";
 const Form = () => {
 
     const [importedCurrencies, setRates] = useState(currencies);
-    const getRates = async () => {
-        const response = await fetch('https://api.exchangeratesapi.io/latest?base=PLN')
-        const rateData = await response.json();
-        const rates = rateData.rates;
-        const ratesEntries = Object.entries(rates);
-        setRates(currencies.map(
-            (currency) => (
-                {
-                    ...currency,
-                    rate: ratesEntries.find(([rate]) => rate === (currency.shortname))[1]
-                }
+
+    useEffect(() => {
+        async function fetchData() {
+            const response = await fetch('https://api.exchangeratesapi.io/latest?base=PLN');
+            const rateData = await response.json();
+            const rates = rateData.rates;
+            const ratesEntries = Object.entries(rates);
+            setRates(currencies.map(
+                (currency) => (
+                    {
+                        ...currency,
+                        rate: ratesEntries.find(([rate]) => rate === (currency.shortname))[1]
+                    }
+                )
             )
-        )
-        );
-    };
+            );
+        }
+        fetchData();
+    }, []);
+
     const [currencyFromName, setCurrencyFromName] = useState("Polish Zloty");
     const onSelectCurrencyFromChange = ({ target }) => setCurrencyFromName(target.value);
 
@@ -45,7 +50,6 @@ const Form = () => {
     return (
         <form
             onSubmit={onFormSubmit}
-            onChange={getRates}
             className="form">
             <fieldset className="form__fieldset">
                 <legend className="form__legend">

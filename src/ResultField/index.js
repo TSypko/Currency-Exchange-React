@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./style.css";
 
 const ResultField = ({ result, currencyToName, amount }) => {
 
     const [rateDate, setRateDate] = useState("");
-    const getRateDate = async () => {
-        const response = await fetch('https://api.exchangeratesapi.io/latest')
-        const rateData = await response.json();
-        setRateDate(rateData.date);
-    }
-    getRateDate();
+
+    useEffect(() => {
+        async function fetchData() {
+            const response = await fetch('https://api.exchangeratesapi.io/latest');
+            const rateData = await response.json();
+            setRateDate(rateData.date);
+        }
+        fetchData()
+    }, []);
 
     const resultString =
         amount
