@@ -34,7 +34,14 @@ const ResultField = ({ result, currencyToName, amount }) => {
                     className="resultField__link"
                     target="__blank" rel="noopener noreferrer">
                     https://exchangeratesapi.io
-                </a> based on data published by the <strong>European Central Bank</strong> from: <span className="resultField__date">{rateDate}</span>
+                </a> based on data published by the
+                {" "}
+                <a
+                    href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
+                    className="resultField__link"
+                    target="__blank" rel="noopener noreferrer">
+                    European Central Bank
+                </a> from: <span className="resultField__date">{rateDate}</span>
             </p>
         </>
     )
