@@ -14,13 +14,13 @@ const Clock = () => {
         };
     }, []);
 
-    const dateString = date.toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" })
-    const timeString = date.toLocaleTimeString();
+    const dateString = date.toLocaleDateString("en-EN", { weekday: "long", day: "numeric", month: "long" })
+    const timeString = date.toLocaleTimeString(undefined);
 
     return (
         <div className="clock">
             <p className="clock__paragraph">
-                Dzisiaj jest {dateString}, {timeString}
+                Today is {dateString}, {timeString}
             </p>
         </div>
     );
