@@ -11,22 +11,26 @@ const Form = () => {
     const [importedCurrencies, setRates] = useState(currencies);
 
     useEffect(() => {
+        let isActive = true;
         async function fetchData() {
             const response = await fetch('https://api.exchangeratesapi.io/latest?base=PLN');
             const rateData = await response.json();
-            const rates = rateData.rates;
-            const ratesEntries = Object.entries(rates);
-            setRates(currencies.map(
-                (currency) => (
-                    {
-                        ...currency,
-                        rate: ratesEntries.find(([rate]) => rate === (currency.shortname))[1]
-                    }
+            const ratesEntries = Object.entries(rateData.rates);
+            if (isActive) {
+                setRates(currencies.map(
+                    (currency) => (
+                        {
+                            ...currency,
+                            rate: ratesEntries.find(([rate]) => rate === (currency.shortname))[1]
+                        }
+                    )
                 )
-            )
-            );
-        }
+                )
+            };
+
+        };
         fetchData();
+        return isActive = false
     }, []);
 
     const [currencyFromName, setCurrencyFromName] = useState("Polish Zloty");
