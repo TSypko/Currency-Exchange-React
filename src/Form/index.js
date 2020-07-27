@@ -21,7 +21,7 @@ const Form = () => {
                     (currency) => (
                         {
                             ...currency,
-                            rate: ratesEntries.find(([rate]) => rate === (currency.shortname))[1]
+                            rate: ratesEntries.find(([rateName]) => rateName === (currency.shortname))[1]
                         }
                     )
                 )
