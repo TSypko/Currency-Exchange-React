@@ -3,23 +3,30 @@
 # SIMPLE CURRENCY EXCHANGE
 LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://tsypko.github.io/Currency-Exchange-React/)
 
- v. 0.5.0 beta
+ v. 0.6.0 beta
 
 ## DESCRIPTION
 Simple, lightweight currency conventer created during ,*,Become A Front End Developer"* course provided by *Youcode Academy*.
 It allows you to instantly convert currencies based on the exchange rate of the day*.
 Supported currencies: 
 
- - [ ] PLN - Polish Zloty
- - [ ] EUR - Euro
- - [ ] USD - US Dollar
- - [ ] GBP - British Pound
- - [ ] CHF - Swiss Franc
- - [ ] DKK - Danish krone
- - [ ] NOK - Norwegian krone
- - [ ] SEK - Swedish krona
- - [ ] RUB - Russian rouble
- - [ ] CZK - Czech koruna
+ - ✅ PLN - Polish Zloty
+ - ✅ EUR - Euro
+ - ✅ USD - US Dollar
+ - ✅ GBP - British Pound
+ - ✅ CHF - Swiss Franc
+ - ✅ DKK - Danish krone
+ - ✅ NOK - Norwegian krone
+ - ✅ SEK - Swedish krona
+ - ✅ RUB - Russian rouble
+ - ✅ CZK - Czech koruna
+ - ✅ BGN - Bulgarian lev
+ - ✅ HUF - Hungarian forint
+ - ✅ RON - Romanian leu
+ - ✅ ISK - Icelandic krona
+ - ✅ CAD - Canadian dollar
+ - ✅ TRY - Turkish lira
+ - ✅ AUD - Australian dollar
 
  // more to come in future...
 
@@ -65,7 +72,18 @@ Please feel free to contact with author: [tsypko@gmail.com](tsypko@gmail.com)
 
 ### VERSION HISTORY
 
-v. 0.5.0 - current version :
+v. 0.6.0 - current version :
+
+Currencies added:
+ - [+] BGN - Bulgarian lev
+ - [+] HUF - Hungarian forint
+ - [+] RON - Romanian leu
+ - [+] ISK - Icelandic krona
+ - [+] CAD - Canadian dollar
+ - [+] TRY - Turkish lira
+ - [+] AUD - Australian dollarsupport
+
+v. 0.5.0:
 - added API integration
 - [-] UAH - Ukrainian hryvnia currency removed due to the lack of API support
 
