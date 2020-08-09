@@ -11,6 +11,7 @@ import czkFlagImage from '../flags/Czech koruna.svg'
 import jpyFlagImage from '../flags/Japanese Yen.svg'
 import hrkFlagImage from '../flags/Croatian Kuna.svg'
 import bgnFlagImage from '../flags/Bulgarian lev.svg'
+import hufFlagImage from '../flags/Hungarian forint.svg'
 
 export const countries = [
   {
@@ -90,5 +91,11 @@ export const countries = [
     shortname: "BGN",
     flagImage: bgnFlagImage,
     country: "Bulgaria",
+  },
+  {
+    name: "Hungarian forint",
+    shortname: "HUF",
+    flagImage: hufFlagImage,
+    country: "Hungary",
   }
 ];
