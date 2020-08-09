@@ -13,6 +13,7 @@ import hrkFlagImage from '../flags/Croatian Kuna.svg'
 import bgnFlagImage from '../flags/Bulgarian lev.svg'
 import hufFlagImage from '../flags/Hungarian forint.svg'
 import ronFlagImage from '../flags/Romanian leu.svg'
+import iskFlagImage from '../flags/Icelandic krona.svg'
 
 export const countries = [
   {
@@ -100,9 +101,9 @@ export const countries = [
     country: "Hungary",
   },
   {
-    name: "Romanian leu",
-    shortname: "RON",
-    flagImage: ronFlagImage,
-    country: "Romania",
+    name: "Icelandic krona",
+    shortname: "ISK",
+    flagImage: iskFlagImage,
+    country: "Iceland",
   }
 ];
