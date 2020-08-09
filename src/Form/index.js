@@ -8,7 +8,7 @@ import "./style.css";
 
 const Form = () => {
 
-    const [importedCurrencies, setRates] = useState(currencies);
+    const [importedCurrencies, setImportedCurrencies] = useState(currencies);
 
     useEffect(() => {
         let isActive = true;
@@ -17,7 +17,7 @@ const Form = () => {
             const rateData = await response.json();
             const ratesEntries = Object.entries(rateData.rates);
             if (isActive) {
-                setRates(currencies.map(
+                setImportedCurrencies(currencies.map(
                     (currency) => (
                         {
                             ...currency,
