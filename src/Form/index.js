@@ -51,7 +51,7 @@ const Form = () => {
         event.preventDefault();
     };
 
-    const result = (amount * currencyFrom.rate / currencyTo.rate).toFixed(2);
+    const result = (amount * currencyTo.rate / currencyFrom.rate).toFixed(2);
 
     return (
         <form
