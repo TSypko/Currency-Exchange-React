@@ -14,8 +14,8 @@ const Clock = () => {
         };
     }, []);
 
-    const dateString = date.toLocaleDateString("en-EN", { weekday: "long", day: "numeric", month: "long" })
-    const timeString = date.toLocaleTimeString(undefined);
+    const dateString = date.toLocaleDateString("en-EN", { weekday: "long", day: "numeric", month: "long" });
+    const timeString = date.toLocaleTimeString();
 
     return (
         <div className="clock">
