@@ -59,7 +59,7 @@ const Form = () => {
             className="form">
             <fieldset className="form__fieldset">
                 <legend className="form__legend">
-                    Conventer
+                    Converter
                 </legend>
                 <div className="form__inputWrapper">
                     <FormField

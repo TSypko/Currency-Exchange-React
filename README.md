@@ -6,7 +6,7 @@ LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://
  v. 0.6.0 beta
 
 ## DESCRIPTION
-Simple, lightweight currency conventer created during ,*,Become A Front End Developer"* course provided by *Youcode Academy*.
+Simple, lightweight currency converter created during ,*,Become A Front End Developer"* course provided by *Youcode Academy*.
 It allows you to instantly convert currencies based on the exchange rate of the day*.
 Supported currencies: 
 
