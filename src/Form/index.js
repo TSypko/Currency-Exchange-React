@@ -8,7 +8,7 @@ import "./style.css";
 
 const Form = () => {
 
-    const [importedCurrencies, setImportedCurrencies] = useState(countries);
+    const [currencies, setCurrencies] = useState(countries);
     const [rateDate, setRateDate] = useState("");
 
     useEffect(() => {
@@ -18,7 +18,7 @@ const Form = () => {
             const rateData = await response.json();
             const ratesEntries = Object.entries(rateData.rates);
             if (isActive) {
-                setImportedCurrencies(countries.map(
+                setCurrencies(countries.map(
                     (currency) => (
                         {
                             ...currency,
@@ -44,8 +44,8 @@ const Form = () => {
     const [amount, setAmount] = useState("");
     const onAmountChange = ({ target }) => setAmount(+target.value);
 
-    const currencyFrom = importedCurrencies.find(({ name }) => name === currencyFromName);
-    const currencyTo = importedCurrencies.find(({ name }) => name === currencyToName);
+    const currencyFrom = currencies.find(({ name }) => name === currencyFromName);
+    const currencyTo = currencies.find(({ name }) => name === currencyToName);
 
     const onFormSubmit = (event) => {
         event.preventDefault();
