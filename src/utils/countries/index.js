@@ -16,6 +16,7 @@ import ronFlagImage from '../flags/Romanian leu.svg'
 import iskFlagImage from '../flags/Icelandic krona.svg'
 import cadFlagImage from '../flags/Canadian dollar.svg'
 import tryFlagImage from '../flags/Turkish lira.svg'
+import audFlagImage from '../flags/Australian dollar.svg'
 
 export const countries = [
   {
@@ -125,5 +126,11 @@ export const countries = [
     shortname: "TRY",
     flagImage: tryFlagImage,
     country: "Turkey",
-  }
+  },
+  {
+    name: "Australian dollar",
+    shortname: "AUD",
+    flagImage: audFlagImage,
+    country: "Australia",
+  },
 ];
