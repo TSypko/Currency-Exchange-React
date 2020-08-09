@@ -1,31 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "67be27c11dd71a1dcde1e34c16a6fe86",
+    "revision": "6c75c18886ac5943d96612de1b01ac39",
     "url": "/Currency-Exchange-React/index.html"
   },
   {
-    "revision": "cee9916044c597a1192e",
-    "url": "/Currency-Exchange-React/static/css/main.1266500a.chunk.css"
+    "revision": "9c4d0a71b686ece660c4",
+    "url": "/Currency-Exchange-React/static/css/main.c7d3ae39.chunk.css"
   },
   {
-    "revision": "90a200bec23ae656bbd2",
-    "url": "/Currency-Exchange-React/static/js/2.8e640da8.chunk.js"
+    "revision": "10e48423535331038865",
+    "url": "/Currency-Exchange-React/static/js/2.1f83d9e6.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Currency-Exchange-React/static/js/2.8e640da8.chunk.js.LICENSE.txt"
+    "url": "/Currency-Exchange-React/static/js/2.1f83d9e6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cee9916044c597a1192e",
-    "url": "/Currency-Exchange-React/static/js/main.23ea390c.chunk.js"
+    "revision": "9c4d0a71b686ece660c4",
+    "url": "/Currency-Exchange-React/static/js/main.1b01b910.chunk.js"
   },
   {
     "revision": "710e263279d1990923ee",
     "url": "/Currency-Exchange-React/static/js/runtime-main.8e14dfba.js"
   },
   {
+    "revision": "9a095a09c9b6c5d29ccd81222b7581ca",
+    "url": "/Currency-Exchange-React/static/media/Australian dollar.9a095a09.svg"
+  },
+  {
     "revision": "0b2080d0810297edc748a58ba3c40f5f",
     "url": "/Currency-Exchange-React/static/media/British Pound.0b2080d0.svg"
+  },
+  {
+    "revision": "9c60498344da60899b5b55d18e377d27",
+    "url": "/Currency-Exchange-React/static/media/Bulgarian lev.9c604983.svg"
+  },
+  {
+    "revision": "7cda37ceb1cfa5360477d8da2a424fcd",
+    "url": "/Currency-Exchange-React/static/media/Canadian dollar.7cda37ce.svg"
   },
   {
     "revision": "3e56776d23fdd54b4ed116481dd19d2b",
@@ -44,6 +56,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/media/Euro.2a2f6022.svg"
   },
   {
+    "revision": "b95aa09ee3425cd425a8d875cfddd5dc",
+    "url": "/Currency-Exchange-React/static/media/Hungarian forint.b95aa09e.svg"
+  },
+  {
+    "revision": "357dcb1c719d20242b4a80110ad5840d",
+    "url": "/Currency-Exchange-React/static/media/Icelandic krona.357dcb1c.svg"
+  },
+  {
     "revision": "ac5b479cc4cea794271429e85c6fa3ad",
     "url": "/Currency-Exchange-React/static/media/Japanese Yen.ac5b479c.svg"
   },
@@ -56,6 +76,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/media/Polish Zloty.1f9d98ad.svg"
   },
   {
+    "revision": "af4f1a84366c7098101b1033a8668dac",
+    "url": "/Currency-Exchange-React/static/media/Romanian leu.af4f1a84.svg"
+  },
+  {
     "revision": "7a8b3a7d8204983d246e6edbcbe21413",
     "url": "/Currency-Exchange-React/static/media/Russian rouble.7a8b3a7d.svg"
   },
@@ -66,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1607794f337b185cc2aa512dba65bef9",
     "url": "/Currency-Exchange-React/static/media/Swiss Franc.1607794f.svg"
+  },
+  {
+    "revision": "657ea685af5d36cee81415a10303e5bb",
+    "url": "/Currency-Exchange-React/static/media/Turkish lira.657ea685.svg"
   },
   {
     "revision": "2995c32de71b731a140529af1fe986bf",
