@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import CurrencySelector from "../CurrencySelector"
 import FormField from "../FormField"
 import ResultField from "../ResultField"
-import { currencies } from '../utils/currencies';
+import { countries } from '../utils/countries';
 import Amount from '../Amount';
 import "./style.css";
 
 const Form = () => {
 
-    const [importedCurrencies, setImportedCurrencies] = useState(currencies);
+    const [importedCurrencies, setImportedCurrencies] = useState(countries);
     const [rateDate, setRateDate] = useState("");
 
     useEffect(() => {
@@ -18,7 +18,7 @@ const Form = () => {
             const rateData = await response.json();
             const ratesEntries = Object.entries(rateData.rates);
             if (isActive) {
-                setImportedCurrencies(currencies.map(
+                setImportedCurrencies(countries.map(
                     (currency) => (
                         {
                             ...currency,

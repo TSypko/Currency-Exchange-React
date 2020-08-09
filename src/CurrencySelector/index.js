@@ -1,10 +1,10 @@
 import React from 'react';
-import { currencies } from '../utils/currencies';
+import { countries } from '../utils/countries';
 import "./style.css";
 
 const CurrencySelector = ({ labelText, value, onChange }) => {
 
-    const currencySelectorItems = currencies.sort((a, b) => (a.name).localeCompare(b.name));
+    const currencySelectorItems = countries.sort((a, b) => (a.name).localeCompare(b.name));
 
     return (
 

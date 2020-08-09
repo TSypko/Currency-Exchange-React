@@ -11,88 +11,76 @@ import czkFlagImage from '../flags/Czech koruna.svg'
 import jpyFlagImage from '../flags/Japanese Yen.svg'
 import hrkFlagImage from '../flags/Croatian Kuna.svg'
 
-export const currencies = [
+export const countries = [
   {
     name: "Polish Zloty",
     shortname: "PLN",
-    rate: 1,
     flagImage: plnFlagImage,
     country: "Poland",
   },
   {
     name: "Euro",
     shortname: "EUR",
-    rate: 4.4827,
     flagImage: euroFlagImage,
     country: "European Union",
   },
   {
     name: "US Dollar",
     shortname: "USD",
-    rate: 3.9263,
     flagImage: usdFlagImage,
     country: "United States of America",
   },
   {
     name: "British Pound",
     shortname: "GBP",
-    rate: 4.9331,
     flagImage: gbpFlagImage,
     country: "Great Britain",
   },
   {
     name: "Swiss Franc",
     shortname: "CHF",
-    rate: 4.1647,
     flagImage: chfFlagImage,
     country: "Switzerland",
   },
   {
     name: "Danish krone",
     shortname: "DKK",
-    rate: 0.6021,
     flagImage: dkkFlagImage,
     country: "Denmark",
   },
   {
     name: "Norwegian krone",
     shortname: "NOK",
-    rate: 0.4230,
     flagImage: norFlagImage,
     country: "Norway",
   },
   {
     name: "Swedish krona",
     shortname: "SEK",
-    rate: 0.4338,
     flagImage: sweFlagImage,
     country: "Sweden",
   },
   {
     name: "Russian rouble",
     shortname: "RUB",
-    rate: 0.0546,
     flagImage: rusFlagImage,
     country: "Russia",
   },
   {
     name: "Czech koruna",
     shortname: "CZK",
-    rate: 0.1678,
     flagImage: czkFlagImage,
     country: "Czechia",
   },
   {
     name: "Japanese Yen",
     shortname: "JPY",
-    rate: 3.6002 / 100,
     flagImage: jpyFlagImage,
     country: "Japan",
   },
   {
     name: "Croatian Kuna",
     shortname: "HRK",
-    rate: 0.5904,
     flagImage: hrkFlagImage,
     country: "Croatia",
   }
