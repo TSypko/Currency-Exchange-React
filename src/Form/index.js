@@ -9,6 +9,7 @@ import "./style.css";
 const Form = () => {
 
     const [importedCurrencies, setImportedCurrencies] = useState(currencies);
+    const [rateDate, setRateDate] = useState("");
 
     useEffect(() => {
         let isActive = true;
@@ -26,6 +27,7 @@ const Form = () => {
                     )
                 )
                 );
+                setRateDate(rateData.date);
             };
 
         };
@@ -110,6 +112,7 @@ const Form = () => {
                             result={result}
                             currencyToName={currencyTo.shortname}
                             amount={amount}
+                            rateDate={rateDate}
                         />
                     }
                 />
