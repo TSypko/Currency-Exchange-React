@@ -108,6 +108,12 @@ export const countries = [
     country: "Iceland",
   },
   {
+    name: "Romanian leu",
+    shortname: "RON",
+    flagImage: ronFlagImage,
+    country: "Romania",
+  },
+  {
     name: "Canadian dollar",
     shortname: "CAD",
     flagImage: cadFlagImage,
