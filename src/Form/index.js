@@ -25,12 +25,12 @@ const Form = () => {
                         }
                     )
                 )
-                )
+                );
             };
 
         };
         fetchData();
-        return isActive = false
+        return () => { isActive = false };
     }, []);
 
     const [currencyFromName, setCurrencyFromName] = useState("Polish Zloty");
