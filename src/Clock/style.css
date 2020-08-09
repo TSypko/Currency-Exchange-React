@@ -1,9 +1,6 @@
 .clock {
     padding: 15px 10px 0px 0;
     background-color: white;
-}
-
-.clock__paragraph {
     margin: 0;
     text-align: right;
     font-size: 12px;

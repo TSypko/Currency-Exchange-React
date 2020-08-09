@@ -19,9 +19,7 @@ const Clock = () => {
 
     return (
         <div className="clock">
-            <p className="clock__paragraph">
                 Today is {dateString}, {timeString}
-            </p>
         </div>
     );
 }
