@@ -1,4 +1,6 @@
-.resultField__result {
+import styled from "styled-components";
+
+export const Result = styled.p`
     padding: 10px 20px;
     font-size: 22px;
     background-color: #00a2ff;
@@ -7,37 +9,41 @@
     border-radius: 5px;
     font-weight: 400;
     text-transform: uppercase;
-}
+`;
 
-.resultField__result--value {
+export const Value = styled.span`
     font-weight: 700;
     margin-left: 30px;
     font-size: 30px;
-}
+`;
 
-.resultField__note {
+export const Note = styled.p`
     font-size: 14px;
     font-weight: 400;
     font-style: italic;
     text-align: right;
-}
-.resultField__link {
+`;
+
+export const Link = styled.a`
     text-decoration: none;
     color: #005383;
     font-size: 14px;
     font-weight: 400;
     font-style: italic;
-}
-.resultField__link:hover {
-    color: #005383bd;
-}
-.resultField__link:active {
-    color: #005383;
-}
-.resultField__date {
+
+    &:hover {
+        color: #005383bd;
+    }
+
+    &:active {
+        color: #005383;
+    }
+`;
+
+export const Date = styled.span`
     font-size: 15px;
     float: right;
     font-style: normal;
     font-weight: 700;
     margin: 10px;
-}
+`;

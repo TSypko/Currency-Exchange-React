@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style.css";
+import { Result, Value, Note, Link, Date } from "./styled"
 
 const ResultField = ({ result, currencyToName, amount, rateDate }) => {
 
@@ -11,28 +11,33 @@ const ResultField = ({ result, currencyToName, amount, rateDate }) => {
 
     return (
         <>
-            <p className="resultField__result">
+            <Result>
                 Result:
-                <span className="resultField__result--value">
+                <Value>
                     {resultString}
-                </span>
-            </p>
-            <p className="resultField__note">
-                Exchange rates imported from <a
+                </Value>
+            </Result>
+            <Note>
+                Exchange rates imported from
+                <Link
                     href="https://exchangeratesapi.io/"
-                    className="resultField__link"
                     target="__blank" rel="noopener noreferrer">
                     https://exchangeratesapi.io
-                </a> based on data published by the
+                </Link> based on data published by the
                 {" "}
-                <a
+                <Link
                     href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
-                    className="resultField__link"
                     target="__blank" rel="noopener noreferrer">
                     European Central Bank
-                </a> from: <span className="resultField__date">{rateDate}</span>
-            </p>
+                </Link>
+                {" "}
+                from:
+                <Date>
+                    {rateDate}
+                </Date>
+            </Note>
         </>
     )
 };
+
 export default ResultField;
