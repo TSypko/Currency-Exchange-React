@@ -3,7 +3,7 @@
 # SIMPLE CURRENCY EXCHANGE
 LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://tsypko.github.io/Currency-Exchange-React/)
 
- v. 0.6.0 beta
+ v. 1.6.2 (beta)
 
 ## DESCRIPTION
 Simple, lightweight currency converter created during ,*,Become A Front End Developer"* course provided by *Youcode Academy*.
@@ -38,10 +38,11 @@ Supported currencies:
 - HTML
 - CSS
 - JavaScript ES6+
+- Styled Components
+- Custom Hooks
 
 ### METHODOLOGIES USED:
 
-- BEM convention
 - JSX
 - Fetch API
 
@@ -72,7 +73,15 @@ Please feel free to contact with author: [tsypko@gmail.com](tsypko@gmail.com)
 
 ### VERSION HISTORY
 
-v. 0.6.0 - current version :
+v. 1.6.2 - current version:
+
+- added Styled Components
+
+v. 1.6.1:
+
+- added custom hooks
+
+v. 1.6.0:
 
 Currencies added:
  - [+] BGN - Bulgarian lev
@@ -83,20 +92,20 @@ Currencies added:
  - [+] TRY - Turkish lira
  - [+] AUD - Australian dollarsupport
 
-v. 0.5.0:
+v. 1.5.0:
 - added API integration
 - [-] UAH - Ukrainian hryvnia currency removed due to the lack of API support
 
-v. 0.4.0  :
+v. 1.4.0  :
 - added Date and Time display
 
-v. 0.3.6
+v. 1.3.0
 
 Currencies added:
  - [+] JPY - Japanese Yen
  - [+] HRK - Croatian Kuna
 
-v. 0.3.5
+v. 1.2.0
 
 Currencies added:
  - [+] DKK - Danish krone
@@ -106,18 +115,18 @@ Currencies added:
  - [+] UAH - Ukrainian hryvnia
  - [+] CZK - Czech koruna
 
-v. 0.3.0
+v. 1.1.0
 
 Application exported to React.JS
 
-v. 0.2.0 - beta
+v. 1.0.2
 - JavaScript code thoroughly refactored,
 
-v. 0.1.1 - beta
+v. 1.0.1
 - JavaScript amendment,
 - Styling amendment,
 
-v. 0.1 - beta
+v. 1.0.0
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
