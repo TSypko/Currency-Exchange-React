@@ -1,17 +1,17 @@
 import React from 'react';
-import "./style.css";
+import { Label, Input } from "./styled"
 
 const Amount = ({ value, onChange }) => (
-    <label className="amount"
+    <Label
     >Amount:
-        <input
+        <Input
             type="number"
             step="0.01"
-            className="amount__input"
+            min="0"
             value={value}
             onChange={onChange}
         />
-    </label>
+    </Label>
 )
 
 export default Amount;
