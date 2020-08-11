@@ -4,7 +4,7 @@ import FormField from "../FormField"
 import ResultField from "../ResultField"
 import { countries } from '../utils/countries';
 import Amount from '../Amount';
-import "./style.css";
+import { FormContainer, Fieldset, Legend, InputWrapper, FlagWrapper, FlagImage } from "./styled"
 
 const Form = () => {
 
@@ -54,14 +54,12 @@ const Form = () => {
     const result = (amount * currencyTo.rate / currencyFrom.rate).toFixed(2);
 
     return (
-        <form
-            onSubmit={onFormSubmit}
-            className="form">
-            <fieldset className="form__fieldset">
-                <legend className="form__legend">
+        <FormContainer onSubmit={onFormSubmit}>
+            <Fieldset>
+                <Legend>
                     Converter
-                </legend>
-                <div className="form__inputWrapper">
+                </Legend>
+                <InputWrapper>
                     <FormField
                         body=
                         {
@@ -72,12 +70,12 @@ const Form = () => {
                             />
                         }
                     />
-                    <div className="form__currencyInFlag">
-                        <img
+                    <FlagWrapper>
+                        <FlagImage
                             src={currencyFrom.flagImage}
                             alt={`Flag of ${currencyFrom.country}`}
-                            className="form__flag" />
-                    </div>
+                        />
+                    </FlagWrapper>
                     <FormField
                         body=
                         {
@@ -88,12 +86,12 @@ const Form = () => {
                             />
                         }
                     />
-                    <div className="form__currencyOutFlag">
-                        <img
+                    <FlagWrapper>
+                        <FlagImage
                             src={currencyTo.flagImage}
                             alt={`Flag of ${currencyTo.country}`}
-                            className="form__flag" />
-                    </div>
+                        />
+                    </FlagWrapper>
                     <FormField
                         body=
                         {
@@ -103,7 +101,7 @@ const Form = () => {
                             />
                         }
                     />
-                </div>
+                </InputWrapper>
                 <FormField
                     formFieldType={"result"}
                     body=
@@ -116,8 +114,8 @@ const Form = () => {
                         />
                     }
                 />
-            </fieldset>
-        </form>
+            </Fieldset>
+        </FormContainer>
     )
 }
 
