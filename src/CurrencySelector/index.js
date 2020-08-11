@@ -1,6 +1,6 @@
 import React from 'react';
 import { countries } from '../utils/countries';
-import "./style.css";
+import { Label, Select, Option } from "./styled"
 
 const CurrencySelector = ({ labelText, value, onChange }) => {
 
@@ -8,21 +8,19 @@ const CurrencySelector = ({ labelText, value, onChange }) => {
 
     return (
 
-        <label className="currencySelector__label">
+        <Label>
             {labelText}
-            <select
-                className="currencySelector__input"
+            <Select
                 value={value}
                 onChange={onChange}
             >
                 {currencySelectorItems.map(currency =>
-                    <option
-                        className="currencySelector__item"
+                    <Option
                         key={currency.shortname}>
                         {currency.name}
-                    </option>)}
-            </select>
-        </label>
+                    </Option>)}
+            </Select>
+        </Label>
     );
 }
 
