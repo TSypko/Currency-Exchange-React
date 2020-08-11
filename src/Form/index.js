@@ -103,7 +103,7 @@ const Form = () => {
                     />
                 </InputWrapper>
                 <FormField
-                    formFieldType="result"
+                    type={"result"}
                     body=
                     {
                         <ResultField

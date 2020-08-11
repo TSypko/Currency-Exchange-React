@@ -1,9 +1,9 @@
 import React from 'react';
 import { Field } from "./styled"
 
-const FormField = ({ formFieldType, body }) => (
+const FormField = ({ type, body }) => (
 
-    <Field result={formFieldType === "result"}>
+    <Field result={type} >
         {body}
     </Field>
 );
