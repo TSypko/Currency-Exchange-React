@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css'
+import { ClockContainer } from "./styled"
 import { useCurrentDate } from './useCurrentDate';
 
 const Clock = () => {
@@ -18,9 +18,9 @@ const Clock = () => {
     }
 
     return (
-        <div className="clock">
+        <ClockContainer>
             Today is {formatDate(date)}
-        </div>
+        </ClockContainer>
     );
 }
 
