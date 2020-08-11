@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.css": "/Currency-Exchange-React/static/css/main.c7d3ae39.chunk.css",
-    "main.js": "/Currency-Exchange-React/static/js/main.da828677.chunk.js",
-    "main.js.map": "/Currency-Exchange-React/static/js/main.da828677.chunk.js.map",
+    "main.js": "/Currency-Exchange-React/static/js/main.a9696879.chunk.js",
+    "main.js.map": "/Currency-Exchange-React/static/js/main.a9696879.chunk.js.map",
     "runtime-main.js": "/Currency-Exchange-React/static/js/runtime-main.8e14dfba.js",
     "runtime-main.js.map": "/Currency-Exchange-React/static/js/runtime-main.8e14dfba.js.map",
-    "static/js/2.1f83d9e6.chunk.js": "/Currency-Exchange-React/static/js/2.1f83d9e6.chunk.js",
-    "static/js/2.1f83d9e6.chunk.js.map": "/Currency-Exchange-React/static/js/2.1f83d9e6.chunk.js.map",
+    "static/js/2.2e38a5d1.chunk.js": "/Currency-Exchange-React/static/js/2.2e38a5d1.chunk.js",
+    "static/js/2.2e38a5d1.chunk.js.map": "/Currency-Exchange-React/static/js/2.2e38a5d1.chunk.js.map",
     "index.html": "/Currency-Exchange-React/index.html",
-    "precache-manifest.31e22e8ac9f2473ad5af61def4109b9b.js": "/Currency-Exchange-React/precache-manifest.31e22e8ac9f2473ad5af61def4109b9b.js",
+    "precache-manifest.cccfde898e5ef0539cb8084a07a36e58.js": "/Currency-Exchange-React/precache-manifest.cccfde898e5ef0539cb8084a07a36e58.js",
     "service-worker.js": "/Currency-Exchange-React/service-worker.js",
-    "static/css/main.c7d3ae39.chunk.css.map": "/Currency-Exchange-React/static/css/main.c7d3ae39.chunk.css.map",
-    "static/js/2.1f83d9e6.chunk.js.LICENSE.txt": "/Currency-Exchange-React/static/js/2.1f83d9e6.chunk.js.LICENSE.txt",
+    "static/js/2.2e38a5d1.chunk.js.LICENSE.txt": "/Currency-Exchange-React/static/js/2.2e38a5d1.chunk.js.LICENSE.txt",
     "static/media/Australian dollar.svg": "/Currency-Exchange-React/static/media/Australian dollar.9a095a09.svg",
     "static/media/British Pound.svg": "/Currency-Exchange-React/static/media/British Pound.0b2080d0.svg",
     "static/media/Bulgarian lev.svg": "/Currency-Exchange-React/static/media/Bulgarian lev.9c604983.svg",
@@ -31,12 +29,11 @@
     "static/media/Swiss Franc.svg": "/Currency-Exchange-React/static/media/Swiss Franc.1607794f.svg",
     "static/media/Turkish lira.svg": "/Currency-Exchange-React/static/media/Turkish lira.657ea685.svg",
     "static/media/US Dollar.svg": "/Currency-Exchange-React/static/media/US Dollar.2995c32d.svg",
-    "static/media/index.css": "/Currency-Exchange-React/static/media/background.83b03288.jpg"
+    "static/media/background.jpg": "/Currency-Exchange-React/static/media/background.83b03288.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.8e14dfba.js",
-    "static/js/2.1f83d9e6.chunk.js",
-    "static/css/main.c7d3ae39.chunk.css",
-    "static/js/main.da828677.chunk.js"
+    "static/js/2.2e38a5d1.chunk.js",
+    "static/js/main.a9696879.chunk.js"
   ]
 }
