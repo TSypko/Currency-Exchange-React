@@ -1,5 +1,5 @@
 import React from 'react';
-import { countries } from '../utils/countries';
+import { countries } from '../../../utils/countries';
 import { Label, Select, Option } from "./styled"
 
 const CurrencySelector = ({ labelText, value, onChange }) => {

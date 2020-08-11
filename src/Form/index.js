@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import CurrencySelector from "../CurrencySelector"
-import FormField from "../FormField"
-import ResultField from "../ResultField"
+import CurrencySelector from "./FormField/CurrencySelector"
+import FormField from "./FormField"
+import ResultField from "./FormField/ResultField"
 import { countries } from '../utils/countries';
-import Amount from '../Amount';
+import Amount from './FormField/Amount';
 import { FormContainer, Fieldset, Legend, InputWrapper, FlagWrapper, FlagImage } from "./styled"
 
 const Form = () => {
