@@ -1,11 +1,11 @@
 import React from 'react';
-import "./style.css";
+import { Field } from "./styled"
 
 const FormField = ({ formFieldType, body }) => (
 
-    <div className={`formField${formFieldType ? ` formField--${formFieldType}` : ""}`}>
+    <Field result={formFieldType === "result"}>
         {body}
-    </div>
+    </Field>
 );
 
 export default FormField;
