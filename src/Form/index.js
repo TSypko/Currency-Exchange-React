@@ -51,7 +51,9 @@ const Form = () => {
         event.preventDefault();
     };
 
-    const result = (amount * currencyTo.rate / currencyFrom.rate).toFixed(2);
+    const [result, setResult] = useState("")
+
+    useEffect(() => setResult(amount * currencyTo.rate / currencyFrom.rate), [amount, currencyTo, currencyFrom]);
 
     return (
         <FormContainer onSubmit={onFormSubmit}>

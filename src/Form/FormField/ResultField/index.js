@@ -5,7 +5,7 @@ const ResultField = ({ result, currencyToName, amount, rateDate }) => {
 
     const resultString =
         amount
-            ? `${result} ${currencyToName}`
+            ? `${result.toFixed(2)} ${currencyToName}`
             : ""
         ;
 
