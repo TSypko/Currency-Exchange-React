@@ -2,8 +2,8 @@ import React from 'react';
 import { Label, Input } from "./styled"
 
 const Amount = ({ value, onChange }) => (
-    <Label
-    >Amount:
+    <Label>
+        Amount:
         <Input
             type="number"
             step="0.01"
