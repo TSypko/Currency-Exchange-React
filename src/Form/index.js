@@ -4,7 +4,7 @@ import FormField from "./FormField"
 import ResultField from "./FormField/ResultField"
 import { countries } from '../utils/countries';
 import Amount from './FormField/Amount';
-import { FormContainer, Fieldset, Legend, InputWrapper, FlagWrapper, FlagImage } from "./styled"
+import { FormContainer, Fieldset, Legend, InputWrapper, FlagWrapper, FlagImage, FetchMessage } from "./styled"
 import { useFetch } from "./useFetch";
 
 const Form = () => {
@@ -59,50 +59,54 @@ const Form = () => {
                 <Legend>
                     Converter
                 </Legend>
-                {rateData.loading || rateData.error}
-                <InputWrapper>
-                    <FormField
-                        body=
-                        {
-                            <CurrencySelector
-                                labelText="From:"
-                                value={currencyFromName}
-                                onChange={onSelectCurrencyFromChange}
-                            />
-                        }
-                    />
-                    <FlagWrapper>
-                        <FlagImage
-                            src={currencyFrom.flagImage}
-                            alt={`Flag of ${currencyFrom.country}`}
+                <FetchMessage error={rateData.error}>
+                    {rateData.loading || rateData.error}
+                </FetchMessage>
+                {rateData.response &&
+                    <InputWrapper>
+                        <FormField
+                            body=
+                            {
+                                <CurrencySelector
+                                    labelText="From:"
+                                    value={currencyFromName}
+                                    onChange={onSelectCurrencyFromChange}
+                                />
+                            }
                         />
-                    </FlagWrapper>
-                    <FormField
-                        body=
-                        {
-                            <CurrencySelector
-                                labelText="To:"
-                                value={currencyToName}
-                                onChange={onSelectCurrencyToChange}
+                        <FlagWrapper>
+                            <FlagImage
+                                src={currencyFrom.flagImage}
+                                alt={`Flag of ${currencyFrom.country}`}
                             />
-                        }
-                    />
-                    <FlagWrapper>
-                        <FlagImage
-                            src={currencyTo.flagImage}
-                            alt={`Flag of ${currencyTo.country}`}
+                        </FlagWrapper>
+                        <FormField
+                            body=
+                            {
+                                <CurrencySelector
+                                    labelText="To:"
+                                    value={currencyToName}
+                                    onChange={onSelectCurrencyToChange}
+                                />
+                            }
                         />
-                    </FlagWrapper>
-                    <FormField
-                        body=
-                        {
-                            <Amount
-                                value={amount}
-                                onChange={onAmountChange}
+                        <FlagWrapper>
+                            <FlagImage
+                                src={currencyTo.flagImage}
+                                alt={`Flag of ${currencyTo.country}`}
                             />
-                        }
-                    />
-                </InputWrapper>
+                        </FlagWrapper>
+                        <FormField
+                            body=
+                            {
+                                <Amount
+                                    value={amount}
+                                    onChange={onAmountChange}
+                                />
+                            }
+                        />
+                    </InputWrapper>}
+
                 <FormField
                     type={"result"}
                     body=

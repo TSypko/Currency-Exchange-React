@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 export const FormContainer = styled.form`
     background-color: white;
@@ -33,4 +33,15 @@ export const FlagWrapper = styled.div`
 export const FlagImage = styled.img`
     height: 50px;
     border: 1px solid black;
+`;
+export const FetchMessage = styled.div`
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+
+    ${({ error }) => error && css`
+        {
+            color: red;
+        }
+    `}
 `;
