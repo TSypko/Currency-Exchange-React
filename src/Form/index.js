@@ -5,35 +5,33 @@ import ResultField from "./FormField/ResultField"
 import { countries } from '../utils/countries';
 import Amount from './FormField/Amount';
 import { FormContainer, Fieldset, Legend, InputWrapper, FlagWrapper, FlagImage } from "./styled"
+import { useFetch } from "./useFetch";
 
 const Form = () => {
 
-    const [currencies, setCurrencies] = useState(countries);
-    const [rateDate, setRateDate] = useState("");
+    const rateData = useFetch("https://api.exchangeratesapi.io/latest?base=PLN");
 
     useEffect(() => {
         let isActive = true;
-        async function fetchData() {
-            const response = await fetch('https://api.exchangeratesapi.io/latest?base=PLN');
-            const rateData = await response.json();
-            const ratesEntries = Object.entries(rateData.rates);
-            if (isActive) {
-                setCurrencies(countries.map(
-                    (currency) => (
-                        {
-                            ...currency,
-                            rate: ratesEntries.find(([rateName]) => rateName === (currency.shortname))[1]
-                        }
-                    )
+        if (rateData.response && isActive) {
+            const ratesEntries = Object.entries(rateData.response.rates);
+            setCurrencies(countries.map(
+                (currency) => (
+                    {
+                        ...currency,
+                        rate: ratesEntries.find(([rateName]) => rateName === (currency.shortname))[1]
+                    }
                 )
-                );
-                setRateDate(rateData.date);
-            };
+            )
+            );
+            setRateDate(rateData.response.date);
 
-        };
-        fetchData();
-        return () => { isActive = false };
-    }, []);
+        }
+        return () => isActive = false;
+    }, [rateData.response, rateData.error]);
+
+    const [currencies, setCurrencies] = useState(countries);
+    const [rateDate, setRateDate] = useState("");
 
     const [currencyFromName, setCurrencyFromName] = useState("Polish Zloty");
     const onSelectCurrencyFromChange = ({ target }) => setCurrencyFromName(target.value);
@@ -61,6 +59,7 @@ const Form = () => {
                 <Legend>
                     Converter
                 </Legend>
+                {rateData.loading || rateData.error}
                 <InputWrapper>
                     <FormField
                         body=
