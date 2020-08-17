@@ -3,7 +3,7 @@
 # SIMPLE CURRENCY EXCHANGE
 LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://tsypko.github.io/Currency-Exchange-React/)
 
- v. 1.6.2 (beta)
+ v. 1.6.3 (beta)
 
 ## DESCRIPTION
 Simple, lightweight currency converter created during ,*,Become A Front End Developer"* course provided by *Youcode Academy*.
@@ -73,7 +73,12 @@ Please feel free to contact with author: [tsypko@gmail.com](tsypko@gmail.com)
 
 ### VERSION HISTORY
 
-v. 1.6.2 - current version:
+v. 1.6.3:
+
+- added *Loading* message while loading data
+- added <span style="color: red">***Unable to receive data***</span> error message while loading data
+
+v. 1.6.2:
 
 - added Styled Components
 
