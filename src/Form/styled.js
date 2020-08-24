@@ -34,11 +34,17 @@ export const FlagImage = styled.img`
     height: 50px;
     border: 1px solid black;
 `;
+
 export const FetchMessage = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
-
+    padding: 10px;
+    width: 100%
+    
     ${({ error }) => error && css`
         {
             color: red;

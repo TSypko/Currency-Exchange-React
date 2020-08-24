@@ -4,8 +4,17 @@ import FormField from "./FormField"
 import ResultField from "./FormField/ResultField"
 import { countries } from '../utils/countries';
 import Amount from './FormField/Amount';
-import { FormContainer, Fieldset, Legend, InputWrapper, FlagWrapper, FlagImage, FetchMessage } from "./styled"
+import {
+    FormContainer,
+    Fieldset,
+    Legend,
+    InputWrapper,
+    FlagWrapper,
+    FlagImage,
+    FetchMessage
+} from "./styled"
 import { useFetch } from "./useFetch";
+import Loading from "./Loading";
 
 const Form = () => {
 
@@ -59,9 +68,12 @@ const Form = () => {
                 <Legend>
                     Converter
                 </Legend>
-                <FetchMessage error={rateData.error}>
-                    {rateData.loading || rateData.error}
-                </FetchMessage>
+                    <FetchMessage error={rateData.error}>
+                        {rateData.loading || rateData.error}
+                    </FetchMessage>
+                    <FetchMessage>
+                        {rateData.loading && <Loading/>}
+                    </FetchMessage>
                 {rateData.response &&
                     <InputWrapper>
                         <FormField
