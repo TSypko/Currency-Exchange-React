@@ -68,12 +68,14 @@ const Form = () => {
                 <Legend>
                     Converter
                 </Legend>
-                    <FetchMessage error={rateData.error}>
+                <>
+                    {!rateData.response && <FetchMessage as="p" isRed={rateData.error}>
                         {rateData.loading || rateData.error}
-                    </FetchMessage>
-                    <FetchMessage>
-                        {rateData.loading && <Loading/>}
-                    </FetchMessage>
+                    </FetchMessage>}
+                    {!rateData.response && <FetchMessage>
+                        {rateData.loading && <Loading />}
+                    </FetchMessage >}
+                </> 
                 {rateData.response &&
                     <InputWrapper>
                         <FormField
