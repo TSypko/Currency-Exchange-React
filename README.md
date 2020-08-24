@@ -56,7 +56,6 @@ with currency conversion
 Exchange rates API is a free service for current and historical foreign exchange rates
 published by the [European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html/)
 
-
 ### HOW TO USE
 
 1. Choose a currency type you wish to convert from **FROM** field.
@@ -65,7 +64,11 @@ published by the [European Central Bank](https://www.ecb.europa.eu/stats/policy_
 4. Result of conversion will appear instantly at **RESULT** field.
 5. Optional, you can switch currencies to check other conversions.
 
-![enter image description here](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/sce__usage.gif)
+![usage gif](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/sce__usage.gif)
+
+6. When data import will fail, following message will be shown:
+
+![error message](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/error.png)
 
 ### AUTHOR
 [Tomasz Sypko](https://tsypko.github.io/homepage/). Pre Junior Front End Developer from Rzeszów, Poland. 
