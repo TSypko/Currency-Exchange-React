@@ -15,10 +15,10 @@ export const useFetch = (URL) => {
                 setLoading("");
             } catch (error) {
                 setLoading("");
-                setError("Unable to receive data");
+                setError("Unable to receive data. Try again later");
             }
         };
-        fetchData();
+        setTimeout(() => fetchData(), 1000);
     }, [URL]);
     return { response, error, loading };
 };
