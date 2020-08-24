@@ -19,6 +19,7 @@ const ResultField = ({ result, currencyToName, amount, rateDate }) => {
             </Result>
             <Note>
                 Exchange rates imported from
+                {" "}
                 <Link
                     href="https://exchangeratesapi.io/"
                     target="__blank" rel="noopener noreferrer">
