@@ -18,7 +18,7 @@ import Loading from "./Loading";
 
 const Form = () => {
 
-    const rateData = useFetch("https://api.exchangeratesapi.io/latest?base=PLN");
+    const rateData = useFetch("https://api.excha1ngeratesapi.io/latest?base=PLN");
 
     useEffect(() => {
         let isActive = true;
@@ -75,64 +75,67 @@ const Form = () => {
                     {!rateData.response && <FetchMessage>
                         {rateData.loading && <Loading />}
                     </FetchMessage >}
-                </> 
-                {rateData.response &&
-                    <InputWrapper>
-                        <FormField
-                            body=
-                            {
-                                <CurrencySelector
-                                    labelText="From:"
-                                    value={currencyFromName}
-                                    onChange={onSelectCurrencyFromChange}
-                                />
-                            }
-                        />
-                        <FlagWrapper>
-                            <FlagImage
-                                src={currencyFrom.flagImage}
-                                alt={`Flag of ${currencyFrom.country}`}
-                            />
-                        </FlagWrapper>
-                        <FormField
-                            body=
-                            {
-                                <CurrencySelector
-                                    labelText="To:"
-                                    value={currencyToName}
-                                    onChange={onSelectCurrencyToChange}
-                                />
-                            }
-                        />
-                        <FlagWrapper>
-                            <FlagImage
-                                src={currencyTo.flagImage}
-                                alt={`Flag of ${currencyTo.country}`}
-                            />
-                        </FlagWrapper>
-                        <FormField
-                            body=
-                            {
-                                <Amount
-                                    value={amount}
-                                    onChange={onAmountChange}
-                                />
-                            }
-                        />
-                    </InputWrapper>}
+                </>
 
-                <FormField
-                    type={"result"}
-                    body=
-                    {
-                        <ResultField
-                            result={result}
-                            currencyToName={currencyTo.shortname}
-                            amount={amount}
-                            rateDate={rateDate}
+                {rateData.response &&
+                    <>
+                        <InputWrapper>
+                            <FormField
+                                body=
+                                {
+                                    <CurrencySelector
+                                        labelText="From:"
+                                        value={currencyFromName}
+                                        onChange={onSelectCurrencyFromChange}
+                                    />
+                                }
+                            />
+                            <FlagWrapper>
+                                <FlagImage
+                                    src={currencyFrom.flagImage}
+                                    alt={`Flag of ${currencyFrom.country}`}
+                                />
+                            </FlagWrapper>
+                            <FormField
+                                body=
+                                {
+                                    <CurrencySelector
+                                        labelText="To:"
+                                        value={currencyToName}
+                                        onChange={onSelectCurrencyToChange}
+                                    />
+                                }
+                            />
+                            <FlagWrapper>
+                                <FlagImage
+                                    src={currencyTo.flagImage}
+                                    alt={`Flag of ${currencyTo.country}`}
+                                />
+                            </FlagWrapper>
+                            <FormField
+                                body=
+                                {
+                                    <Amount
+                                        value={amount}
+                                        onChange={onAmountChange}
+                                    />
+                                }
+                            />
+                        </InputWrapper>
+                        <FormField
+                            type={"result"}
+                            body=
+                            {
+                                <ResultField
+                                    result={result}
+                                    currencyToName={currencyTo.shortname}
+                                    amount={amount}
+                                    rateDate={rateDate}
+                                />
+                            }
                         />
-                    }
-                />
+                    </>
+                }
             </Fieldset>
         </FormContainer>
     )
