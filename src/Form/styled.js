@@ -43,11 +43,9 @@ export const FetchMessage = styled.div`
     font-size: 20px;
     font-weight: 700;
     padding: 10px;
-    width: 100%
+    width: 100%;
     
-    ${({ error }) => error && css`
-        {
+    ${({ isRed }) => isRed && css`
             color: red;
-        }
     `}
 `;
