@@ -18,7 +18,7 @@ import Loading from "./Loading";
 
 const Form = () => {
 
-    const rateData = useFetch("https://api.excha1ngeratesapi.io/latest?base=PLN");
+    const rateData = useFetch("https://api.exchangeratesapi.io/latest?base=PLN");
 
     useEffect(() => {
         let isActive = true;
