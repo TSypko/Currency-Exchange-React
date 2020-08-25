@@ -10,12 +10,17 @@ export const useFetch = (URL) => {
         const fetchData = async () => {
             try {
                 const response = await fetch(URL);
-                const resData = await response.json();
-                setResponse(resData);
-                setLoading("");
+                if (response.status === 200) {
+                    const resData = await response.json();
+                    setResponse(resData);
+                    setLoading("");
+                }
             } catch (error) {
                 setLoading("");
-                setError("Unable to receive data. Try again later");
+                setError(`
+                Unable to receive data.
+                Reason: ${error.toString()}
+                  `);
             }
         };
         setTimeout(() => fetchData(), 1000);
