@@ -3,7 +3,7 @@
 # SIMPLE CURRENCY EXCHANGE
 LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://tsypko.github.io/Currency-Exchange-React/)
 
- v. 1.6.4
+ v. 1.6.5
 
 ## DESCRIPTION
 Simple, lightweight currency converter created during ,*,Become A Front End Developer"* course provided by *Youcode Academy*.
@@ -76,6 +76,10 @@ published by the [European Central Bank](https://www.ecb.europa.eu/stats/policy_
 Please feel free to contact with author: [tsypko@gmail.com](tsypko@gmail.com)
 
 ### VERSION HISTORY
+
+v. 1.6.5:
+
+- added possible error Type to message,
 
 v. 1.6.4:
 
