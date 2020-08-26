@@ -45,7 +45,7 @@ export const FetchMessage = styled.div`
     padding: 10px;
     width: 100%;
     
-    ${({ isRed }) => isRed && css`
+    ${({ error }) => error && css`
             color: red;
     `}
 `;
