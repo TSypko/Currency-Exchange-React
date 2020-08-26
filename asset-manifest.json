@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/Currency-Exchange-React/static/js/main.f0c8cd9a.chunk.js",
-    "main.js.map": "/Currency-Exchange-React/static/js/main.f0c8cd9a.chunk.js.map",
+    "main.js": "/Currency-Exchange-React/static/js/main.1e6e86e1.chunk.js",
+    "main.js.map": "/Currency-Exchange-React/static/js/main.1e6e86e1.chunk.js.map",
     "runtime-main.js": "/Currency-Exchange-React/static/js/runtime-main.8e14dfba.js",
     "runtime-main.js.map": "/Currency-Exchange-React/static/js/runtime-main.8e14dfba.js.map",
     "static/js/2.caa80ab2.chunk.js": "/Currency-Exchange-React/static/js/2.caa80ab2.chunk.js",
     "static/js/2.caa80ab2.chunk.js.map": "/Currency-Exchange-React/static/js/2.caa80ab2.chunk.js.map",
     "index.html": "/Currency-Exchange-React/index.html",
-    "precache-manifest.011e67048c1f2ec4992c17fe1a4b21e3.js": "/Currency-Exchange-React/precache-manifest.011e67048c1f2ec4992c17fe1a4b21e3.js",
+    "precache-manifest.9269c42e43dc1e665eee5c0470457f71.js": "/Currency-Exchange-React/precache-manifest.9269c42e43dc1e665eee5c0470457f71.js",
     "service-worker.js": "/Currency-Exchange-React/service-worker.js",
     "static/js/2.caa80ab2.chunk.js.LICENSE.txt": "/Currency-Exchange-React/static/js/2.caa80ab2.chunk.js.LICENSE.txt",
     "static/media/Australian dollar.svg": "/Currency-Exchange-React/static/media/Australian dollar.9a095a09.svg",
@@ -34,6 +34,6 @@
   "entrypoints": [
     "static/js/runtime-main.8e14dfba.js",
     "static/js/2.caa80ab2.chunk.js",
-    "static/js/main.f0c8cd9a.chunk.js"
+    "static/js/main.1e6e86e1.chunk.js"
   ]
 }
