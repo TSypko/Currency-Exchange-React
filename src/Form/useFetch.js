@@ -4,11 +4,14 @@ export const useFetch = (url) => {
 
     const [data, setData] = useState({
         content: null,
-        loading: "Loading...",
+        loading: null,
         error: null,
     });
 
     useEffect(() => {
+        setData({
+            loading: true
+        });
         const fetchData = async () => {
             try {
                 const response = await fetch(url);
@@ -18,19 +21,20 @@ export const useFetch = (url) => {
                 const responseData = await response.json();
                 setData({
                     content: responseData,
-                    loading: "",
-                    error: null
+                    loading: false,
+                    error: false
                 });
             } catch (error) {
                 setData({
                     content: null,
-                    loading: "",
-                    error: "Unable to receive data. Try again later"
+                    loading: false,
+                    error: true
                 });
                 console.error(error);
             };
         };
         setTimeout(fetchData, 1000);
     }, [url]);
+
     return data;
 };
