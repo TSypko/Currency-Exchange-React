@@ -19,26 +19,18 @@ import Loading from "./Loading";
 const Form = () => {
 
     const rateData = useFetch("https://api.exchangeratesapi.io/latest?base=PLN");
-    const [loadingMessage, setLoadingMessage] = useState("");
-    const [errorMessage, setErrorMessage] = useState("");
 
     useEffect(() => {
-        if (rateData.error) {
-            setErrorMessage("Unable to receive data. Try again later")
-        }
-        if (rateData.loading) {
-            setLoadingMessage("Loading...")
-        }
         if (rateData.content) {
-            setLoadingMessage("")
             setCurrencies(countries.map(
                 (currency) => ({
                     ...currency,
                     rate: rateData.content.rates[currency.shortname]
                 })));
             setRateDate(rateData.content.date);
+
         };
-    }, [rateData.content, rateData.loading, rateData.error]);
+    }, [rateData.content]);
 
     const [currencies, setCurrencies] = useState(countries);
     const [rateDate, setRateDate] = useState("");
@@ -72,11 +64,15 @@ const Form = () => {
                 {!rateData.content
                     ? (
                         <>
-                            <FetchMessage as="p" error={errorMessage}>
-                                {loadingMessage || errorMessage}
+                            <FetchMessage as="p" error={rateData.error}>
+                                {
+                                    rateData.loading
+                                        ? "Loading..."
+                                        : rateData.error = "Unable receive data. Try again later"
+                                }
                             </FetchMessage>
                             <FetchMessage>
-                                {loadingMessage && <Loading />}
+                                {rateData.loading && <Loading />}
                             </FetchMessage >
                         </>
                     )
