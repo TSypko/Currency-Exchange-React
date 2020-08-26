@@ -21,23 +21,16 @@ const Form = () => {
     const rateData = useFetch("https://api.exchangeratesapi.io/latest?base=PLN");
 
     useEffect(() => {
-        let isActive = true;
-        if (rateData.response && isActive) {
-            const ratesEntries = Object.entries(rateData.response.rates);
+        if (rateData.content) {
             setCurrencies(countries.map(
-                (currency) => (
-                    {
-                        ...currency,
-                        rate: ratesEntries.find(([rateName]) => rateName === (currency.shortname))[1]
-                    }
-                )
-            )
-            );
-            setRateDate(rateData.response.date);
+                (currency) => ({
+                    ...currency,
+                    rate: rateData.content.rates[currency.shortname]
+                })));
+            setRateDate(rateData.content.date);
 
-        }
-        return () => isActive = false;
-    }, [rateData.response, rateData.error]);
+        };
+    }, [rateData.content]);
 
     const [currencies, setCurrencies] = useState(countries);
     const [rateDate, setRateDate] = useState("");
@@ -68,16 +61,18 @@ const Form = () => {
                 <Legend>
                     Converter
                 </Legend>
-                <>
-                    {!rateData.response && <FetchMessage as="p" isRed={rateData.error}>
-                        {rateData.loading || rateData.error}
-                    </FetchMessage>}
-                    {!rateData.response && <FetchMessage>
-                        {rateData.loading && <Loading />}
-                    </FetchMessage >}
-                </>
-
-                {rateData.response &&
+                {!rateData.content
+                    ? (
+                        <>
+                            <FetchMessage as="p" error={rateData.error}>
+                                {rateData.loading || rateData.error}
+                            </FetchMessage>
+                            <FetchMessage>
+                                {rateData.loading && <Loading />}
+                            </FetchMessage >
+                        </>
+                    )
+                    :
                     <>
                         <InputWrapper>
                             <FormField
