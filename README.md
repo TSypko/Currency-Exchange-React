@@ -33,14 +33,13 @@ Supported currencies:
 
 ### TECHNOLOGIES USED:
 
-- REACT.js
-- creat-react-app
+- React.js
+- create-react-app
 - HTML
 - CSS
 - JavaScript ES6+
 - Styled Components
 - Custom Hooks
-- React-loading
 
 ### METHODOLOGIES USED:
 
