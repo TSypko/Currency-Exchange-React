@@ -3,7 +3,7 @@
 # SIMPLE CURRENCY EXCHANGE
 LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://tsypko.github.io/Currency-Exchange-React/)
 
- v. 1.6.6
+ v. 1.7.0
 
 ## DESCRIPTION
 Simple, lightweight currency converter created during ,*,Become A Front End Developer"* course provided by *Youcode Academy*.
@@ -27,9 +27,19 @@ Supported currencies:
  - ✅ CAD - Canadian dollar
  - ✅ TRY - Turkish lira
  - ✅ AUD - Australian dollar
-
- // more to come in future...
-
+ - ✅ BRL - Brazilian real
+ - ✅ HKD - Hong Kong dollar
+ - ✅ IDR - Indonesian rupiah
+ - ✅ ILS - Israeli shekel
+ - ✅ INR - Indian rupee
+ - ✅ KRW - South Korean won
+ - ✅ MXN - Mexican peso
+ - ✅ MYR - Malaysian ringgit
+ - ✅ NZD - New Zealand Dollar
+ - ✅ PHP - Phlilippine peso
+ - ✅ SGD - Singapore dollar
+ - ✅ THB - Thai baht
+ - ✅ ZAR - South Afrifcan rand
 
 ### TECHNOLOGIES USED:
 
@@ -76,6 +86,23 @@ Please feel free to contact with author: [tsypko@gmail.com](tsypko@gmail.com)
 
 ### VERSION HISTORY
 
+v. 1.7.0:
+
+Currencies added:
+ - [+] BRL - Brazilian real
+ - [+] HKD - Hong Kong dollar
+ - [+] IDR - Indonesian rupiah
+ - [+] ILS - Israeli shekel
+ - [+] INR - Indian rupee
+ - [+] KRW - South Korean won
+ - [+] MXN - Mexican peso
+ - [+] MYR - Malaysian ringgit
+ - [+] NZD - New Zealand Dollar
+ - [+] PHP - Phlilippine peso
+ - [+] SGD - Singapore dollar
+ - [+] THB - Thai baht
+ - [+] ZAR - South Afrifcan rand
+
 v. 1.6.6:
 
 - added result display in according to local language ID,
@@ -110,7 +137,7 @@ Currencies added:
  - [+] ISK - Icelandic krona
  - [+] CAD - Canadian dollar
  - [+] TRY - Turkish lira
- - [+] AUD - Australian dollarsupport
+ - [+] AUD - Australian dollar
 
 v. 1.5.0:
 - added API integration
