@@ -3,7 +3,7 @@
 # SIMPLE CURRENCY EXCHANGE
 LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://tsypko.github.io/Currency-Exchange-React/)
 
- v. 1.6.5
+ v. 1.6.6
 
 ## DESCRIPTION
 Simple, lightweight currency converter created during ,*,Become A Front End Developer"* course provided by *Youcode Academy*.
@@ -65,7 +65,7 @@ published by the [European Central Bank](https://www.ecb.europa.eu/stats/policy_
 
 ![usage gif](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/sce__usage.gif)
 
-6. When data import will fail, following message will be shown:
+6. When data import fails, following message will be shown:
 
 ![error message](https://raw.githubusercontent.com/TSypko/Currency-Exchange-React/master/error.png)
 
@@ -75,6 +75,10 @@ published by the [European Central Bank](https://www.ecb.europa.eu/stats/policy_
 Please feel free to contact with author: [tsypko@gmail.com](tsypko@gmail.com)
 
 ### VERSION HISTORY
+
+v. 1.6.6:
+
+- added result display in according to local language ID,
 
 v. 1.6.5:
 
