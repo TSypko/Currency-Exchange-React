@@ -1,11 +1,11 @@
 import React from 'react';
 import { Result, Value, Note, Link, Date } from "./styled"
 
-const ResultField = ({ result, currencyToName, amount, rateDate }) => {
+const ResultField = ({ result, LCID, currencyToName, amount, rateDate }) => {
 
     const resultString =
         amount
-            ? `${result.toFixed(2)} ${currencyToName}`
+            ? result.toLocaleString(LCID, { style: 'currency', currency: currencyToName })
             : ""
         ;
 

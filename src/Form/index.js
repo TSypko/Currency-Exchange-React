@@ -127,6 +127,7 @@ const Form = () => {
                             {
                                 <ResultField
                                     result={result}
+                                    LCID={currencyTo.LCID}
                                     currencyToName={currencyTo.shortname}
                                     amount={amount}
                                     rateDate={rateDate}
