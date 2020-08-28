@@ -20,14 +20,13 @@ export const Legend = styled.legend`
 `;
 
 export const InputWrapper = styled.div`
-    margin-right: 40px;
     display: flex;
     flex-direction: column;
 `;
 
 export const FlagWrapper = styled.div`
     text-align: center;
-    margin-left: 50px;
+    margin: 15px 0px;
 `;
 
 export const FlagImage = styled.img`
