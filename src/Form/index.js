@@ -83,7 +83,7 @@ const Form = () => {
                                 body=
                                 {
                                     <CurrencySelector
-                                        labelText="From:"
+                                        labelText="From"
                                         value={currencyFromName}
                                         onChange={onSelectCurrencyFromChange}
                                     />
@@ -99,7 +99,7 @@ const Form = () => {
                                 body=
                                 {
                                     <CurrencySelector
-                                        labelText="To:"
+                                        labelText="To"
                                         value={currencyToName}
                                         onChange={onSelectCurrencyToChange}
                                     />
