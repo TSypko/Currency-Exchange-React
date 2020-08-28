@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c140f52017364ce755844d52f6bbf0a5",
+    "revision": "0e90bd980f44b9f1e5b2d7ac75ab695f",
     "url": "/Currency-Exchange-React/index.html"
   },
   {
-    "revision": "543bf20428419c0825f3",
-    "url": "/Currency-Exchange-React/static/js/2.8fd3de2a.chunk.js"
+    "revision": "b207b5edfc3982c59fb0",
+    "url": "/Currency-Exchange-React/static/js/2.72e94dfc.chunk.js"
   },
   {
-    "revision": "e23d72e353070f497294c1592aa53554",
-    "url": "/Currency-Exchange-React/static/js/2.8fd3de2a.chunk.js.LICENSE.txt"
+    "revision": "b47b83f293ef0a67523532a1d2a28ee0",
+    "url": "/Currency-Exchange-React/static/js/2.72e94dfc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b32caf5ad2a3205b7201",
-    "url": "/Currency-Exchange-React/static/js/main.b49d9204.chunk.js"
+    "revision": "0c31a96c00ab1c7522cb",
+    "url": "/Currency-Exchange-React/static/js/main.ac7cde30.chunk.js"
   },
   {
     "revision": "710e263279d1990923ee",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/media/Australian dollar.a1dda4ca.svg"
   },
   {
-    "revision": "caf2cf2c4607842d80d2b779715cc63a",
-    "url": "/Currency-Exchange-React/static/media/Brazil.caf2cf2c.svg"
+    "revision": "f72a49f6d95ded209c505386f0927d5d",
+    "url": "/Currency-Exchange-React/static/media/Brazil.f72a49f6.svg"
   },
   {
     "revision": "0b2080d0810297edc748a58ba3c40f5f",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/media/Canadian dollar.b6e78ec8.svg"
   },
   {
-    "revision": "3a5b5ac1ac98c76572f65c1ddd6dcadf",
-    "url": "/Currency-Exchange-React/static/media/China.3a5b5ac1.svg"
+    "revision": "ad40b3a7b80aa520453634814789dd1b",
+    "url": "/Currency-Exchange-React/static/media/China.ad40b3a7.svg"
   },
   {
     "revision": "3e56776d23fdd54b4ed116481dd19d2b",
@@ -60,8 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/media/Euro.2a2f6022.svg"
   },
   {
-    "revision": "679d5ec38d71530f840d78633848bd13",
-    "url": "/Currency-Exchange-React/static/media/HongKong.679d5ec3.svg"
+    "revision": "901fbb553db71d97dbac29ed3dfee974",
+    "url": "/Currency-Exchange-React/static/media/HongKong.901fbb55.svg"
   },
   {
     "revision": "7901a6f1495ab308f401e25aad293254",
@@ -72,44 +72,44 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/media/Icelandic krona.52c82fb1.svg"
   },
   {
-    "revision": "bdfaaf97045e7179c59f02bb5ad4c98c",
-    "url": "/Currency-Exchange-React/static/media/India.bdfaaf97.svg"
+    "revision": "7fb3e9b63942eb7869739b68276866c1",
+    "url": "/Currency-Exchange-React/static/media/India.7fb3e9b6.svg"
   },
   {
-    "revision": "1cfe41605519ecf1c766a6abfe02239b",
-    "url": "/Currency-Exchange-React/static/media/Indonesia.1cfe4160.svg"
+    "revision": "d24726de989d99ac7e8fe49390425314",
+    "url": "/Currency-Exchange-React/static/media/Indonesia.d24726de.svg"
   },
   {
-    "revision": "2ed461d2b274bc3578dc2bc1b8197f6b",
-    "url": "/Currency-Exchange-React/static/media/Israel.2ed461d2.svg"
+    "revision": "b047591e7a57c4321a5a41d24e1c0e2d",
+    "url": "/Currency-Exchange-React/static/media/Israel.b047591e.svg"
   },
   {
     "revision": "ac5b479cc4cea794271429e85c6fa3ad",
     "url": "/Currency-Exchange-React/static/media/Japanese Yen.ac5b479c.svg"
   },
   {
-    "revision": "3e0c968342fcda345dae150d19ccc1fd",
-    "url": "/Currency-Exchange-React/static/media/Malaysia.3e0c9683.svg"
+    "revision": "70a579f99b347be273e0e53a3a56d96d",
+    "url": "/Currency-Exchange-React/static/media/Malaysia.70a579f9.svg"
   },
   {
-    "revision": "4fb7c48ff03d98d3566d691cb6eec67e",
-    "url": "/Currency-Exchange-React/static/media/Mexico.4fb7c48f.svg"
+    "revision": "04720099d0bde3c70e39d6c4b9962da0",
+    "url": "/Currency-Exchange-React/static/media/Mexico.04720099.svg"
   },
   {
-    "revision": "c35868e6ecbef9be05e72aaf8a4c274c",
-    "url": "/Currency-Exchange-React/static/media/NewZealand.c35868e6.svg"
+    "revision": "fd348ea0346caaa67a54f1aba85e5ce0",
+    "url": "/Currency-Exchange-React/static/media/NewZealand.fd348ea0.svg"
   },
   {
     "revision": "4b57a28e497b81a0fb3063015dfbe800",
     "url": "/Currency-Exchange-React/static/media/Norwegian krone.4b57a28e.svg"
   },
   {
-    "revision": "0394a95d826151e8043531da887b6ace",
-    "url": "/Currency-Exchange-React/static/media/Philippines.0394a95d.svg"
+    "revision": "8c99d74428e9d01ecaf0a7208448199a",
+    "url": "/Currency-Exchange-React/static/media/Philippines.8c99d744.svg"
   },
   {
-    "revision": "1b9768efcf170243ac47c39bedb2aa95",
-    "url": "/Currency-Exchange-React/static/media/Polish Zloty.1b9768ef.svg"
+    "revision": "1abf80fdfbc6ab404eb7a79204161cb2",
+    "url": "/Currency-Exchange-React/static/media/Polish Zloty.1abf80fd.svg"
   },
   {
     "revision": "c95c8f3d101d08d6e2affc490bdb1d18",
@@ -120,16 +120,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/media/Russian rouble.7a8b3a7d.svg"
   },
   {
-    "revision": "6ae2dc5b5c669b14a66f66887faa548f",
-    "url": "/Currency-Exchange-React/static/media/Singapore.6ae2dc5b.svg"
+    "revision": "14be03f1b049e44e273482ac57be893a",
+    "url": "/Currency-Exchange-React/static/media/Singapore.14be03f1.svg"
   },
   {
-    "revision": "bb194490cc6cd231c2a318d8946b08ab",
-    "url": "/Currency-Exchange-React/static/media/SouthAfrica.bb194490.svg"
+    "revision": "8ae301f2eb887bcfb134a4e5b665d726",
+    "url": "/Currency-Exchange-React/static/media/SouthAfrica.8ae301f2.svg"
   },
   {
-    "revision": "e7ceeb083f6540d5f61fe2dbd2b22d77",
-    "url": "/Currency-Exchange-React/static/media/SouthKorea.e7ceeb08.svg"
+    "revision": "78fa1bf3d9dbda479e5ce54b03fd2bad",
+    "url": "/Currency-Exchange-React/static/media/SouthKorea.78fa1bf3.svg"
   },
   {
     "revision": "c37f1b987f795252cdb79a9c89e15159",
@@ -140,8 +140,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/media/Swiss Franc.1607794f.svg"
   },
   {
-    "revision": "62f0033c55e17aaa3153e000c121ab13",
-    "url": "/Currency-Exchange-React/static/media/Thailand.62f0033c.svg"
+    "revision": "3d39bf3e703b8b020209b6ce67b7c4ac",
+    "url": "/Currency-Exchange-React/static/media/Thailand.3d39bf3e.svg"
   },
   {
     "revision": "eed11f2835be2e00760d99390300b2cd",
