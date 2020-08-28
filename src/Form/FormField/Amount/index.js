@@ -4,31 +4,31 @@ import InputLabel from '@material-ui/core/InputLabel';
 import { withStyles } from '@material-ui/core/styles';
 import styled from "styled-components";
 
-const Amount = ({ value, onChange }) => {
+const StyledLabel = withStyles({
+    root: {
+        textTransform: 'uppercase',
+        margin: "10px 10px",
+        letterSpacing: "2px",
+        fontSize: "20px",
+        fontWeight: "400",
+    },
+})(InputLabel);
 
-    const StyledLabel = withStyles({
-        root: {
-            textTransform: 'uppercase',
-            margin: "10px 10px",
-            letterSpacing: "2px",
-            fontSize: "20px",
-            fontWeight: "400",
-        },
-    })(InputLabel);
+const Input = withStyles({
+    root: {
+        width: "47%",
+        textAlign: "right",
+        outline: "none",
+    },
+})(TextField);
 
-    const Input = withStyles({
-        root: {
-            width: "47%",
-            textAlign: "right",
-            outline: "none",
-        },
-    })(TextField);
-
-    const StyledInput = styled(Input)`
-        .MuiOutlinedInput-notchedOutline {
-            border-color: #00a2ff;
-        }
+const StyledInput = styled(Input)`
+    .MuiOutlinedInput-notchedOutline {
+        border-color: #00a2ff;
+    }
 `;
+
+const Amount = ({ value, onChange }) => {
 
     return (
         <>
