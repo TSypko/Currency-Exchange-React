@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components"
 
 export const Field = styled.div`
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
 
     @media (max-width: 420px) {
