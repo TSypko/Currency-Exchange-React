@@ -13,8 +13,9 @@ export const Result = styled.p`
 
 export const Value = styled.span`
     font-weight: 700;
-    margin-left: 30px;
+    margin-left: 10px;
     font-size: 30px;
+    word-break: break-all;
 `;
 
 export const Note = styled.p`
