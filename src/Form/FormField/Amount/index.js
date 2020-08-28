@@ -2,6 +2,7 @@ import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import InputLabel from '@material-ui/core/InputLabel';
 import { withStyles } from '@material-ui/core/styles';
+import styled from "styled-components";
 
 const Amount = ({ value, onChange }) => {
 
@@ -9,31 +10,39 @@ const Amount = ({ value, onChange }) => {
         root: {
             textTransform: 'uppercase',
             margin: "10px 10px",
-            color: "black",
-            fontWeight: "700",
+            letterSpacing: "2px",
+            fontSize: "20px",
+            fontWeight: "400",
         },
     })(InputLabel);
 
-    const StyledInput = withStyles({
+    const Input = withStyles({
         root: {
-            width: "max-content",
+            width: "47%",
             textAlign: "right",
             outline: "none",
         },
     })(TextField);
 
+    const StyledInput = styled(Input)`
+        .MuiOutlinedInput-notchedOutline {
+            border-color: #00a2ff;
+        }
+`;
+
     return (
         <>
             <StyledLabel>Amount</StyledLabel>
             <StyledInput
+                variant="outlined"
                 type="number"
                 step="0.01"
                 min="0"
                 max="999999"
-                placeholder="enter amount"
                 autoFocus
                 value={value}
                 onChange={onChange}
+                helperText="Please enter amount"
             />
         </>
 

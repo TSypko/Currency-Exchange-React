@@ -1,47 +1,44 @@
 import React from 'react';
 import { countries } from '../../../utils/countries';
-import Select from '@material-ui/core/Select';
-import InputLabel from '@material-ui/core/InputLabel';
+import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import { withStyles } from '@material-ui/core/styles';
+import styled from "styled-components";
 
 const CurrencySelector = ({ labelText, value, onChange }) => {
 
 
-    const StyledLabel = withStyles({
+    const Select = withStyles({
         root: {
-            textTransform: 'uppercase',
-            margin: "5px 10px",
-            color: "black",
-            fontWeight: "700",
-        },
-    })(InputLabel);
-
-    const StyledSelect = withStyles({
-        root: {
-            padding: "10px 10px",
             fontSize: "18px",
         },
-    })(Select);
+    })(TextField);
 
     const StyledMenuItem = withStyles({
         root: {
             textTransform: 'uppercase',
             margin: "5px 10px",
-            fontSize: "16px",
+            fontSize: "14px",
         },
     })(MenuItem);
+
+    const StyledSelect = styled(Select)`
+        .MuiOutlinedInput-notchedOutline {
+            border-color: #00a2ff;
+        }
+    `;
 
     const currencySelectorItems = countries.sort((a, b) => (a.name).localeCompare(b.name));
 
     return (
         <>
-            <StyledLabel for={labelText}>{labelText}</StyledLabel>
             <StyledSelect
-                id={labelText}
+                variant="outlined"
+                label={labelText}
                 value={value}
                 onChange={onChange}
-
+                select
+                helperText="Please select currency"
             >
                 {currencySelectorItems.map(currency =>
                     <StyledMenuItem
