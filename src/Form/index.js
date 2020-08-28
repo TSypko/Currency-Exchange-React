@@ -35,10 +35,10 @@ const Form = () => {
     const [currencies, setCurrencies] = useState(countries);
     const [rateDate, setRateDate] = useState("");
 
-    const [currencyFromName, setCurrencyFromName] = useState("Polish Zloty");
+    const [currencyFromName, setCurrencyFromName] = useState("Euro");
     const onSelectCurrencyFromChange = ({ target }) => setCurrencyFromName(target.value);
 
-    const [currencyToName, setCurrencyToName] = useState("Euro");
+    const [currencyToName, setCurrencyToName] = useState("Polish Zloty");
     const onSelectCurrencyToChange = ({ target }) => setCurrencyToName(target.value);
 
     const [amount, setAmount] = useState("");
@@ -83,7 +83,7 @@ const Form = () => {
                                 body=
                                 {
                                     <CurrencySelector
-                                        labelText="From:"
+                                        labelText="From"
                                         value={currencyFromName}
                                         onChange={onSelectCurrencyFromChange}
                                     />
@@ -99,7 +99,7 @@ const Form = () => {
                                 body=
                                 {
                                     <CurrencySelector
-                                        labelText="To:"
+                                        labelText="To"
                                         value={currencyToName}
                                         onChange={onSelectCurrencyToChange}
                                     />
