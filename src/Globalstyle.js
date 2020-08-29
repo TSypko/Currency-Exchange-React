@@ -5,14 +5,17 @@ export const GlobalStyles = createGlobalStyle`
 
   html {
     box-sizing: border-box;
+    background: url(${background});
+ 
   }
   *, ::after, ::before {
         box-sizing: inherit;
   }
 
   body {
-    background: url(${background});
+
     background-size: cover;
+    background: hsla(200, 100%, 20%, 0.5);
     font-family: "Roboto Condensed", sans-serif;
     color: #222;
     font-size: 16px;
@@ -21,15 +24,4 @@ export const GlobalStyles = createGlobalStyle`
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    &::after { 
-        content: "";
-        background: hsla(0, 0%, 100%, 0.3);
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-  }
-    
 }`
