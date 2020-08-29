@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
   html {
     box-sizing: border-box;
     background: url(${background});
+    background-size: cover;
  
   }
   *, ::after, ::before {
@@ -14,8 +15,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
 
-    background-size: cover;
-    background: hsla(200, 100%, 20%, 0.5);
+    background: hsla(195, 50%, 90%, 0.4);
     font-family: "Roboto Condensed", sans-serif;
     color: #222;
     font-size: 16px;
