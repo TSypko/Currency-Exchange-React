@@ -5,15 +5,14 @@ export const Result = styled.p`
     font-size: 22px;
     background-color: #00a2ff;
     color: hsl(208, 100%, 97%);
-    margin-right: 5px;
     border-radius: 5px;
     font-weight: 400;
     text-transform: uppercase;
+    text-align: center;
 `;
 
 export const Value = styled.span`
     font-weight: 700;
-    margin-left: 10px;
     font-size: 30px;
     word-break: break-all;
 `;

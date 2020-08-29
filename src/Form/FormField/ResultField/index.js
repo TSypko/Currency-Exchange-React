@@ -12,7 +12,7 @@ const ResultField = ({ result, LCID, currencyToName, amount, rateDate }) => {
     return (
         <>
             <Result>
-                Result:
+                {!resultString && "Result"}
                 <Value>
                     {resultString}
                 </Value>
