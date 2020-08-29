@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Result = styled.p`
     padding: 10px 20px;
@@ -9,6 +9,10 @@ export const Result = styled.p`
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
+    ${({ center }) => center && css`
+
+    `}
+
 `;
 
 export const Value = styled.span`
