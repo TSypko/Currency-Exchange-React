@@ -1,5 +1,5 @@
 import React from 'react';
-import { Result, Value, Note, Link, Date } from "./styled"
+import { Result, Value, Note, Link, Date } from "./styled";
 
 const ResultField = ({ result, LCID, currencyToName, amount, rateDate }) => {
 
@@ -17,7 +17,7 @@ const ResultField = ({ result, LCID, currencyToName, amount, rateDate }) => {
                     {resultString}
                 </Value>
             </Result>
-            <Note>
+            <Note variant="filled" severity="info">
                 Exchange rates imported from
                 {" "}
                 <Link

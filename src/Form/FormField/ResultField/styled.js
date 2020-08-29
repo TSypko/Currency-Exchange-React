@@ -1,4 +1,15 @@
 import styled from "styled-components";
+import MuiAlert from '@material-ui/lab/Alert';
+import { withStyles } from '@material-ui/core/styles';
+
+export const Note = withStyles({
+    root: {
+        fontWeight: "300",
+        fontSize: "12px",
+        textAlign: "right",
+        fontStyle: "italic",     
+    },
+})(MuiAlert);
 
 export const Result = styled.p`
     padding: 10px 20px;
@@ -17,18 +28,11 @@ export const Value = styled.span`
     word-break: break-all;
 `;
 
-export const Note = styled.p`
-    font-size: 14px;
-    font-weight: 400;
-    font-style: italic;
-    text-align: right;
-`;
-
 export const Link = styled.a`
     text-decoration: none;
-    color: #005383;
-    font-size: 14px;
-    font-weight: 400;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
     font-style: italic;
 
     &:hover {
