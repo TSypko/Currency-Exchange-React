@@ -1,29 +1,6 @@
 import React from 'react';
 import { countries } from '../../../utils/countries';
-import TextField from '@material-ui/core/TextField';
-import MenuItem from '@material-ui/core/MenuItem';
-import { withStyles } from '@material-ui/core/styles';
-import styled from "styled-components";
-
-const Select = withStyles({
-    root: {
-        fontSize: "18px",
-    },
-})(TextField);
-
-const StyledMenuItem = withStyles({
-    root: {
-        textTransform: 'uppercase',
-        margin: "5px 10px",
-        fontSize: "14px",
-    },
-})(MenuItem);
-
-const StyledSelect = styled(Select)`
-    .MuiOutlinedInput-notchedOutline {
-        border-color: #00a2ff;
-    }
-`;
+import { StyledMenuItem, Select } from "./styled.js"
 
 const CurrencySelector = ({ labelText, value, onChange }) => {
 
@@ -31,7 +8,7 @@ const CurrencySelector = ({ labelText, value, onChange }) => {
 
     return (
         <>
-            <StyledSelect
+            <Select
                 variant="outlined"
                 label={labelText}
                 value={value}
@@ -45,8 +22,9 @@ const CurrencySelector = ({ labelText, value, onChange }) => {
                         value={currency.name}
                     >
                         {currency.name}
-                    </StyledMenuItem>)}
-            </StyledSelect>
+                    </StyledMenuItem>
+                    )};
+            </Select>
         </>
     );
 }

@@ -1,22 +1,20 @@
-import styled from "styled-components"
+import TextField from '@material-ui/core/TextField';
+import MenuItem from '@material-ui/core/MenuItem';
+import { withStyles } from '@material-ui/core/styles';
+import styled from "styled-components";
 
-export const Label = styled.label`
-    margin-right: 5px;
-    margin-left: 10px;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
+export const Select = styled(TextField)`
+    .MuiOutlinedInput-notchedOutline {
+        border-color: #00a2ff;
+        font-size: "18px";
+    }
 `;
 
-export const Select = styled.select`
-    margin: 10px;
-    padding: 15px 10px;
-    font-size: 20px;
-    border: 1px solid #00a2ff;
-    border-radius: 5px;
-`;
+export const StyledMenuItem = withStyles({
+    root: {
+        textTransform: 'uppercase',
+        margin: "5px 10px",
+        fontSize: "14px",
+    },
+})(MenuItem);
 
-export const Option = styled.option`
-    font-size: 18px;
-`;
