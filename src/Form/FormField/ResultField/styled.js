@@ -31,17 +31,17 @@ export const Value = styled.span`
 
 export const Link = styled.a`
     text-decoration: none;
-    color: #00a2ff;
+    color: #3f50b5;
     font-size: 12px;
     font-weight: 700;
     font-style: italic;
 
     &:hover {
-        color: #005383bd;
+        filter: brightness(110%);
     }
 
     &:active {
-        color: #005383;
+        filter: brightness(120%);
     }
 `;
 
