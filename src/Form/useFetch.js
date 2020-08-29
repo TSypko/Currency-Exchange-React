@@ -33,7 +33,7 @@ export const useFetch = (url) => {
                 console.error(error);
             };
         };
-        setTimeout(fetchData, 1000);
+        setTimeout(fetchData, 700);
     }, [url]);
 
     return data;
