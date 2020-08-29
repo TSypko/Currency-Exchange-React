@@ -3,7 +3,7 @@
 # SIMPLE CURRENCY EXCHANGE
 LIVE LINK: [https://tsypko.github.io/SCE-Simple-Currency-Exchange-App/](https://tsypko.github.io/Currency-Exchange-React/)
 
- v. 1.7.0
+ v. 1.8.0
 
 ## DESCRIPTION
 Simple, lightweight currency converter created during ,*,Become A Front End Developer"* course provided by *Youcode Academy*.
@@ -49,6 +49,7 @@ Supported currencies:
 - CSS
 - JavaScript ES6+
 - Styled Components
+- Material UI
 - Custom Hooks
 
 ### METHODOLOGIES USED:
@@ -85,6 +86,15 @@ published by the [European Central Bank](https://www.ecb.europa.eu/stats/policy_
 Please feel free to contact with author: [tsypko@gmail.com](tsypko@gmail.com)
 
 ### VERSION HISTORY
+
+v. 1.8.0:
+
+- added Material UI library
+- Clock component refactored
+- New Information & Error message design
+- API source information style changed
+- RESULT display changed
+- Background changed
 
 v. 1.7.0:
 
