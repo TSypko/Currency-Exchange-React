@@ -1,10 +1,18 @@
 import styled from "styled-components"
+import AccessTimeIcon from '@material-ui/icons/AccessTime';
 
 export const ClockContainer = styled.div`
-    padding: 15px 10px 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
     background-color: white;
     margin: 0;
-    text-align: right;
-    font-size: 12px;
-    font-family: monospace;
+    font-size: 13px;
+    font-family: "Roboto Condensed";
+    letter-spacing: 1px;
+`;
+
+export const Icon = styled(AccessTimeIcon)`
+    margin: 0 5px;
 `;

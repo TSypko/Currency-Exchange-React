@@ -1,6 +1,7 @@
 import React from 'react';
-import { ClockContainer } from "./styled"
+import { ClockContainer, Icon } from "./styled"
 import { useCurrentDate } from './useCurrentDate';
+
 
 const Clock = () => {
 
@@ -19,6 +20,7 @@ const Clock = () => {
 
     return (
         <ClockContainer>
+            <Icon/>
             Today is {formatDate(date)}
         </ClockContainer>
     );
