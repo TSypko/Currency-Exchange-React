@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/Currency-Exchange-React/static/js/main.e49ae65b.chunk.js",
-    "main.js.map": "/Currency-Exchange-React/static/js/main.e49ae65b.chunk.js.map",
+    "main.js": "/Currency-Exchange-React/static/js/main.0a2f3d15.chunk.js",
+    "main.js.map": "/Currency-Exchange-React/static/js/main.0a2f3d15.chunk.js.map",
     "runtime-main.js": "/Currency-Exchange-React/static/js/runtime-main.8e14dfba.js",
     "runtime-main.js.map": "/Currency-Exchange-React/static/js/runtime-main.8e14dfba.js.map",
-    "static/js/2.72e94dfc.chunk.js": "/Currency-Exchange-React/static/js/2.72e94dfc.chunk.js",
-    "static/js/2.72e94dfc.chunk.js.map": "/Currency-Exchange-React/static/js/2.72e94dfc.chunk.js.map",
+    "static/js/2.55baf9b3.chunk.js": "/Currency-Exchange-React/static/js/2.55baf9b3.chunk.js",
+    "static/js/2.55baf9b3.chunk.js.map": "/Currency-Exchange-React/static/js/2.55baf9b3.chunk.js.map",
     "index.html": "/Currency-Exchange-React/index.html",
-    "precache-manifest.7efd56e5cea37f41c585b9cc975a7100.js": "/Currency-Exchange-React/precache-manifest.7efd56e5cea37f41c585b9cc975a7100.js",
+    "precache-manifest.32e45b0bffd4f1f3eeeb0c950415fca7.js": "/Currency-Exchange-React/precache-manifest.32e45b0bffd4f1f3eeeb0c950415fca7.js",
     "service-worker.js": "/Currency-Exchange-React/service-worker.js",
-    "static/js/2.72e94dfc.chunk.js.LICENSE.txt": "/Currency-Exchange-React/static/js/2.72e94dfc.chunk.js.LICENSE.txt",
+    "static/js/2.55baf9b3.chunk.js.LICENSE.txt": "/Currency-Exchange-React/static/js/2.55baf9b3.chunk.js.LICENSE.txt",
     "static/media/Australian dollar.svg": "/Currency-Exchange-React/static/media/Australian dollar.a1dda4ca.svg",
     "static/media/Brazil.svg": "/Currency-Exchange-React/static/media/Brazil.f72a49f6.svg",
     "static/media/British Pound.svg": "/Currency-Exchange-React/static/media/British Pound.0b2080d0.svg",
@@ -47,7 +47,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8e14dfba.js",
-    "static/js/2.72e94dfc.chunk.js",
-    "static/js/main.e49ae65b.chunk.js"
+    "static/js/2.55baf9b3.chunk.js",
+    "static/js/main.0a2f3d15.chunk.js"
   ]
 }
