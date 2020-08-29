@@ -7,7 +7,8 @@ export const Note = withStyles({
         fontWeight: "300",
         fontSize: "12px",
         textAlign: "right",
-        fontStyle: "italic",     
+        fontStyle: "italic",
+        padding: "0px 10px"     ,
     },
 })(MuiAlert);
 
@@ -30,7 +31,7 @@ export const Value = styled.span`
 
 export const Link = styled.a`
     text-decoration: none;
-    color: black;
+    color: #00a2ff;
     font-size: 12px;
     font-weight: 700;
     font-style: italic;

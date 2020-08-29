@@ -17,7 +17,7 @@ const ResultField = ({ result, LCID, currencyToName, amount, rateDate }) => {
                     {resultString}
                 </Value>
             </Result>
-            <Note variant="filled" severity="info">
+            <Note variant="outlined" severity="info">
                 Exchange rates imported from
                 {" "}
                 <Link
