@@ -38,9 +38,7 @@ export const FetchMessage = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
+    margin: 50px 0;
     padding: 10px;
     width: 100%;
     

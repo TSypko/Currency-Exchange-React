@@ -15,6 +15,7 @@ import {
 } from "./styled"
 import { useFetch } from "./useFetch";
 import Loading from "./Loading";
+import MuiAlert from '@material-ui/lab/Alert';
 
 const Form = () => {
 
@@ -64,13 +65,14 @@ const Form = () => {
                 {!rateData.content
                     ? (
                         <>
-                            <FetchMessage as="p" error={rateData.error}>
-                                {
-                                    rateData.loading
-                                        ? "Loading..."
-                                        : rateData.error = "Unable receive data. Try again later"
+                                { rateData.loading
+                                        ? <MuiAlert elevation={6} variant="filled" severity="info">
+                                            Loading...
+                                          </MuiAlert>
+                                        : rateData.error = <MuiAlert elevation={6} variant="filled" severity="error">
+                                            "Unable receive data. Try again later"
+                                           </MuiAlert>
                                 }
-                            </FetchMessage>
                             <FetchMessage>
                                 {rateData.loading && <Loading />}
                             </FetchMessage >
