@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/Currency-Exchange-React/static/js/main.0a2f3d15.chunk.js",
-    "main.js.map": "/Currency-Exchange-React/static/js/main.0a2f3d15.chunk.js.map",
+    "main.js": "/Currency-Exchange-React/static/js/main.0a41907c.chunk.js",
+    "main.js.map": "/Currency-Exchange-React/static/js/main.0a41907c.chunk.js.map",
     "runtime-main.js": "/Currency-Exchange-React/static/js/runtime-main.8e14dfba.js",
     "runtime-main.js.map": "/Currency-Exchange-React/static/js/runtime-main.8e14dfba.js.map",
     "static/js/2.55baf9b3.chunk.js": "/Currency-Exchange-React/static/js/2.55baf9b3.chunk.js",
     "static/js/2.55baf9b3.chunk.js.map": "/Currency-Exchange-React/static/js/2.55baf9b3.chunk.js.map",
     "index.html": "/Currency-Exchange-React/index.html",
-    "precache-manifest.32e45b0bffd4f1f3eeeb0c950415fca7.js": "/Currency-Exchange-React/precache-manifest.32e45b0bffd4f1f3eeeb0c950415fca7.js",
+    "precache-manifest.474dd411fb94cd8b0c0f2401b9cb59f6.js": "/Currency-Exchange-React/precache-manifest.474dd411fb94cd8b0c0f2401b9cb59f6.js",
     "service-worker.js": "/Currency-Exchange-React/service-worker.js",
     "static/js/2.55baf9b3.chunk.js.LICENSE.txt": "/Currency-Exchange-React/static/js/2.55baf9b3.chunk.js.LICENSE.txt",
     "static/media/Australian dollar.svg": "/Currency-Exchange-React/static/media/Australian dollar.a1dda4ca.svg",
@@ -43,11 +43,11 @@
     "static/media/Thailand.svg": "/Currency-Exchange-React/static/media/Thailand.3d39bf3e.svg",
     "static/media/Turkish lira.svg": "/Currency-Exchange-React/static/media/Turkish lira.eed11f28.svg",
     "static/media/US Dollar.svg": "/Currency-Exchange-React/static/media/US Dollar.2995c32d.svg",
-    "static/media/background.jpg": "/Currency-Exchange-React/static/media/background.83b03288.jpg"
+    "static/media/background.jpg": "/Currency-Exchange-React/static/media/background.f4e6d68d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.8e14dfba.js",
     "static/js/2.55baf9b3.chunk.js",
-    "static/js/main.0a2f3d15.chunk.js"
+    "static/js/main.0a41907c.chunk.js"
   ]
 }

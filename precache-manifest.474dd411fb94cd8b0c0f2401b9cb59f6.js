@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b49a39e782e0f23a4991ecb036765a24",
+    "revision": "653bd82dd4221eeed16fe2f11b9f9b23",
     "url": "/Currency-Exchange-React/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/js/2.55baf9b3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d196ef5ac1b2e5a9b211",
-    "url": "/Currency-Exchange-React/static/js/main.0a2f3d15.chunk.js"
+    "revision": "774bc4a4a5e3327ebcf1",
+    "url": "/Currency-Exchange-React/static/js/main.0a41907c.chunk.js"
   },
   {
     "revision": "710e263279d1990923ee",
@@ -152,7 +152,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-Exchange-React/static/media/US Dollar.2995c32d.svg"
   },
   {
-    "revision": "83b03288dab2acca913c5ca3e68c819f",
-    "url": "/Currency-Exchange-React/static/media/background.83b03288.jpg"
+    "revision": "f4e6d68d40e2bfa1564c4b5bffcf5f4e",
+    "url": "/Currency-Exchange-React/static/media/background.f4e6d68d.jpg"
   }
 ]);
