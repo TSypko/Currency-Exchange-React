@@ -14,7 +14,6 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-
     background: hsla(195, 50%, 90%, 0.4);
     font-family: "Roboto Condensed", sans-serif;
     color: #222;
