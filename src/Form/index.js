@@ -12,7 +12,7 @@ import {
     FlagWrapper,
     FlagImage,
     FetchMessage
-} from "./styled"
+} from "./styled";
 import { useFetch } from "./useFetch";
 import Loading from "./Loading";
 import MuiAlert from '@material-ui/lab/Alert';
@@ -22,15 +22,12 @@ const Form = () => {
     const rateData = useFetch("https://api.exchangeratesapi.io/latest?base=PLN");
 
     useEffect(() => {
-        if (rateData.content) {
-            setCurrencies(countries.map(
-                (currency) => ({
-                    ...currency,
-                    rate: rateData.content.rates[currency.shortname]
-                })));
-            setRateDate(rateData.content.date);
-
-        };
+        setCurrencies(countries.map(
+            (currency) => ({
+                ...currency,
+                rate: rateData.content?.rates[currency.shortname]
+            })));
+        setRateDate(rateData.content?.date);
     }, [rateData.content]);
 
     const [currencies, setCurrencies] = useState(countries);
@@ -52,9 +49,7 @@ const Form = () => {
         event.preventDefault();
     };
 
-    const [result, setResult] = useState("")
-
-    useEffect(() => setResult(amount * currencyTo.rate / currencyFrom.rate), [amount, currencyTo, currencyFrom]);
+    const result = amount * currencyTo.rate / currencyFrom.rate;
 
     return (
         <FormContainer onSubmit={onFormSubmit}>
@@ -65,14 +60,14 @@ const Form = () => {
                 {!rateData.content
                     ? (
                         <>
-                                { rateData.loading
-                                        ? <MuiAlert elevation={6} variant="filled" severity="info">
-                                            Loading...
+                            {rateData.loading
+                                ? <MuiAlert elevation={6} variant="filled" severity="info">
+                                    Loading...
                                           </MuiAlert>
-                                        : rateData.error = <MuiAlert elevation={6} variant="filled" severity="error">
-                                            "Unable receive data. Try again later"
+                                : rateData.error = <MuiAlert elevation={6} variant="filled" severity="error">
+                                    "Unable receive data. Try again later"
                                            </MuiAlert>
-                                }
+                            }
                             <FetchMessage>
                                 {rateData.loading && <Loading />}
                             </FetchMessage >
@@ -81,6 +76,7 @@ const Form = () => {
                     :
                     <>
                         <InputWrapper>
+
                             <FormField
                                 body=
                                 {
